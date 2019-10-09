@@ -1,0 +1,24 @@
+.media-section{
+  padding: $sectionPadding;
+  video{
+    width: 100%;
+    height: auto;
+  }
+  h3{
+    font-weight: bold;
+    color: $black;
+    font-size: 1.7em;
+  }
+  .carousel{
+    img{
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .carousel-caption{
+      background: rgba(0,0,0,0.9);
+      padding: 10px;
+      border-radius: 4px;
+    }
+  }
+}

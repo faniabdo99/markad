@@ -1,0 +1,18 @@
+.downloads{
+  h3{
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  p{
+    color: $dark-gray;
+  }
+  a.download-btn{
+    display: block;
+    padding:15px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    text-align: center;
+    color:#fff;
+    background:$black;
+  }
+}

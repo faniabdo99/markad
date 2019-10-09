@@ -1,0 +1,65 @@
+.game-mods{
+  padding: $sectionPadding;
+  .single-game-mode{
+    display: flex;
+    flex-basis: 0;
+    .image-container{
+      flex:1;
+      img{
+        width: 80%;
+        margin: auto;
+        border-radius: 4px;
+      }
+    }
+    .text-container{
+      flex:1;
+      h3{
+        color: $brand;
+        font-weight: bold;
+        font-size: 1.6em;
+        margin-bottom: 15px;
+      }
+      p{
+        color: $dark-gray;
+        line-height: 1.8;
+      }
+      a.youtube-link{
+        display: block;
+        border-radius: 50px;
+        padding: 5px 15px 9px 15px;
+        transition: all ease 0.3s;
+        background: $youtube;
+        color: #fff;
+        width: 60%;
+        font-size: 0.9em;
+        text-align: center;
+        &:hover{
+          background: $youtube-hover;
+          transition: all ease 0.3s;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:764px){
+  .game-mods{
+    .single-game-mode{
+      margin-bottom: 15px;
+      .text-container{
+        flex:1;
+        h3{
+          font-size: 1.2em;
+          margin-bottom: 5px;
+        }
+        p{
+          font-size: 0.7em;
+          line-height: 1.3;
+        }
+        a.youtube-link{
+          padding: 5px 15px 9px 15px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

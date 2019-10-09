@@ -1,0 +1,192 @@
+.admin-body{
+    background: $light-gray;
+}
+
+.admin-hero-section{
+    height: 75vh;
+    background: $brand;
+    padding:25vh 10vw;
+    color: $black;
+    text-align: center;
+    direction: rtl;
+    h1{
+        font-size: 2em;
+        margin-bottom: 25px;
+    }
+    p{
+        font-size: 0.9em;
+        margin-bottom: 50px;
+        a{
+            background:$black;
+            padding:8px 15px;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+    }
+    ul{
+        list-style: none;
+        li{
+            display: inline-block;
+            background:$black;
+            border-radius: 4px;
+            padding:5px 10px;
+            font-size: 0.8em;
+            margin-left: 15px;
+            font-weight: bold;
+            a{
+                color:$brand;
+            }
+        }
+    }
+}
+.admin-card{
+    width: 90%;
+    padding: 25px;
+    border-radius: 4px;
+    margin:20px auto;
+    background:#fff;
+    direction: rtl;
+    text-align: center;
+    h4{
+        font-weight: bold;
+        color:$brand;
+        text-align:right;
+        margin-bottom: 30px;
+    }
+    a{
+        color:#333;
+    }
+ 
+
+    .card-single{
+ 
+        &.bordered{
+            border-left:2px solid $dark-gray;
+        }
+        i , b{
+            font-size: 2.5em;
+            color:$brand;
+            margin-bottom: 10px;
+        }
+        p{
+            span{
+                font-weight: bold;
+                color:$brand;
+            }
+        }
+
+    }
+}
+
+//Add New Post Page
+.new-post-group{
+    input[type="submit"]{
+        background: $brand;
+        padding: 10px;
+        text-align: center;
+        color:#fff;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+    label,input,textarea,select{
+        display: block;
+        width: 100%;
+    }
+    label{
+        &::after{
+            content: " :";
+        }
+        text-align: right;
+        color:$brand;
+        font-weight: bold;
+        direction: rtl;
+        margin-bottom: 10px;
+    }
+    input,textarea,select{
+        padding: 10px;
+        border-radius: 4px;
+        background: $light-gray;
+        border:none;
+        margin-bottom: 10px;
+    }
+    p.tip{
+        color: $dark-gray;
+        font-size: 0.9em;
+        text-align: right;
+        direction: rtl;
+    }
+}
+@media screen and (max-width:764px){
+    .admin-hero-section{
+        height: 65vh;
+        padding:20vh 5vw;
+        h1{
+            font-size: 1.5em;
+        }
+        p{
+            a{
+                background:#fff;
+                padding:6px 7px;
+            }
+        }
+        ul{
+            list-style: none;
+            li{
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .admin-card{
+        width: 99%;
+        .card-single{
+     
+            &.bordered{
+                border-left:none;
+                margin-bottom: 25px;
+                border-bottom: 1px solid #ccc;
+            }
+            i , b{
+                font-size: 1.5em;
+            }
+        }
+    }
+    
+    //Add New Post Page
+    .new-post-group{
+        p.tip{
+            font-size: 0.6em;
+        }
+    }
+
+}
+
+.single-message{
+    background:$light-gray;
+    padding:10px;
+    margin-bottom: 15px;
+    p.support-ticket{
+        color:$brand;
+        font-weight: bold;
+        text-align: left !important;
+        font-size: 1.3em;
+    }
+    p.contact-information{
+        text-align: left !important;
+        direction: ltr !important;
+    }
+    p.message-content{
+        font-size: 1.1em;
+    }
+    ul{
+        li{
+            a{
+                display:block;
+                font-weight: bold;
+                color:#fff;
+                width:20%;
+                margin-right: auto;
+                margin-bottom:10px;
+            }
+        }
+    }
+}

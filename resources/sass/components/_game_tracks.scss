@@ -1,0 +1,46 @@
+.game-tracks{
+  padding: $sectionPadding;
+.single-game-track{
+  width: 80%;
+  margin: auto;
+  img{
+    width: 100%;
+    height: 300px;
+    //box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+  .text-container{
+    background: $light-gray;
+    padding:10px;
+    min-height: 150px;
+    h3{
+      color:$black;
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+    p{
+      color: $dark-gray;
+      font-size: 0.9em;
+    }
+  }
+}
+}
+@media screen and (max-width:764px){
+  .game-tracks{
+  .single-game-track{
+    width: 80%;
+    margin: 0 auto 20px auto;
+
+    .text-container{
+      h3{
+        font-size: 1em;
+      }
+      p{
+        color: $dark-gray;
+        font-size: 0.7em;
+      }
+    }
+  }
+  }
+}

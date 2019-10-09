@@ -1,0 +1,27 @@
+.login-body{
+    padding-top: 150px;
+    direction: rtl;
+    .login-button{
+        width: 100%;
+        background:$brand;
+        color:#fff;
+        padding:5px 10px;
+        border-radius: 4px;
+        border:none;
+        margin-top: 25px;
+    }
+    label{
+        display: block;
+        width: 100%;
+        text-align: right;
+        margin-bottom: 5px;
+    }
+    input{
+        width: 100%;
+        padding: 10px;
+    }
+    .card-header{
+        text-align: right;
+        font-weight: bold;
+    }
+}

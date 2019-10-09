@@ -1,0 +1,145 @@
+.hero{
+  height: 100vh;
+  width: 100%;
+  background: url('../images/hero.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  .hero-content{
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    padding: 30vh 10vh;
+    color: #fff;
+    position: relative;
+    h1{
+      font-size: 4em;
+      margin-bottom: 25px;
+      font-weight: bold;
+    }
+    p{
+      font-size: 1.4em;
+      font-weight: 300;
+    }
+    ul{
+      display: flex;
+      flex-basis: 0;
+      align-items: center;
+      justify-content: flex-start;
+      list-style: none;
+      li{
+        margin:15px;
+        a{
+          display: block;
+          border-radius: 50px;
+          padding: 10px 50px 14px 50px;
+          transition: all ease 0.3s;
+          &.get-started{
+            background: $brand;
+            color: $black;
+            &:hover{
+              background: $brand-hover;
+              transition: all ease 0.3s;
+            }
+        }
+        &.watch-trailer{
+          background: $youtube;
+          color: #fff;
+          &:hover{
+            background: $youtube-hover;
+            transition: all ease 0.3s;
+          }
+        }
+       }
+      }
+    }
+    .trailer-in-mobile{
+      position: relative;
+      img{
+        width: 505px;
+        height: 255px;
+      }
+      video{
+        bottom: 0px;
+        width: 405px;
+        height: 247px;
+        position: absolute;
+        left: 50px;
+        top: 0;
+      }
+    }
+    .cursor{
+      background: $brand;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      align-items: center;
+      text-align: center;
+      padding-top: 25px;
+      position: absolute;
+      left: 47.5%;
+      bottom: -30px;
+      i{
+        display: block;
+        font-size: 12px;
+        animation: CursorAnimation infinite 1.5s;
+      }
+    }
+  }
+}
+
+//Mobile Phone CSS
+@media screen and (max-width:764px){
+  .hero{
+    .hero-content{
+      padding: 130px 3vh;
+      position: relative;
+      h1{
+        font-size: 2.5em;
+        margin-bottom: 25px;
+        text-align: center;
+      }
+      p{
+        text-align: center;
+        font-size: 1em;
+      }
+      ul{
+        justify-content: space-between;
+        li{
+          margin:15px;
+          text-align: center;
+          a{
+            padding: 5px 15px 8px 15px;
+         }
+        }
+      }
+      .trailer-in-mobile{
+        position: relative;
+        img{
+          width: 247px;
+          height: 120px;
+          display: block;
+          margin: 0 auto;
+        }
+        video{
+          width: 232px;
+          height: 108px;
+          position: absolute;
+          left: 40px;
+          top: 6px;
+        }
+      }
+      .cursor{
+        width: 40px;
+        height: 40px;
+        padding-top: 16.5px;
+        left: 45%;
+        bottom: -20px;
+        i{
+          display: block;
+          font-size: 8px;
+          animation: CursorAnimation infinite 1.5s;
+        }
+      }
+    }
+  }
+}

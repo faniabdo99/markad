@@ -1,0 +1,72 @@
+.navbar{
+  padding: 25px 6%;
+  transition: all ease 0.3s;
+  &.scrolled , &.all-scrolled{
+    background: $black;
+    transition: all ease 0.3s;
+    padding: 15px 10%;
+  }
+  .navbar-brand{
+    img{
+      height: 40px;
+      width: auto;
+    }
+  }
+  .navbar-nav{
+    .nav-item{
+      margin-left: 10px;
+      .nav-link{
+        color:#fff;
+        transition: all ease 0.3s;
+        &:before{
+          content: '';
+          width:10px;
+          height: 10px;
+          background: $brand;
+          display: inline-block;
+          opacity: 0;
+          margin-right: 8px;
+          border-radius: 50%;
+        }
+
+      }
+      &.special-link{
+        .nav-link{
+          background: $brand;
+          color:$black;
+          transition: all ease 0.3s;
+          border-radius: 50px;
+          padding: 10px 25px;
+          &:before{
+            display: none;
+          }
+          &:hover{
+            background: $brand-hover;
+            transition: all ease 0.3s;
+            color: $black;
+          }
+        }
+      }
+      &:hover{
+        .nav-link{
+          transition: all ease 0.3s;
+          color: $brand;
+          &:before{
+            opacity: 1;
+            animation: FadeInOut infinite 1.2s;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:764px){
+  .navbar{
+    .navbar-nav{
+      text-align: center;
+    }
+    .navbar-toggler-icon{
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+  }
+}

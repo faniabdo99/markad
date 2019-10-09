@@ -1,0 +1,96 @@
+.contact-us-hero{
+  height: 100vh;
+  background: $brand;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 57%);
+  .contact-us-image{
+      background: url('../images/contact-hero.jpg') no-repeat center center;
+      background-size: cover;
+      width: 50%;
+      height: 100vh;
+      margin-left: auto;
+  }
+
+}
+.contact-us-text{
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 50%;
+  padding: 40px;
+  h1{
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+  }
+  p{
+    color: #fff;
+  }
+  .contact-form{
+    background: #fff;
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    width: 75%;
+    margin: 30px auto 0px auto;
+    .form-error-message{
+      color: #bd4040;
+      font-size: 0.9em;
+      font-weight: bold;
+    }
+    .form-success-message{
+      color: #bd4040;
+      font-size: 0.9em;
+      font-weight: bold;
+      text-align:center;
+    }
+    label , input , textarea{
+      display: block;
+      width: 100%;
+    }
+    label{
+      font-weight: bold;
+      color: $black;
+    }
+    input , textarea{
+      border:none;
+      background: $light-gray;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 40px;
+    }
+    input[name="sendContactUs"]{
+      background: $brand;
+      color: $black;
+      margin-bottom: 20px;
+    }
+    input[name="sendSupport"]{
+      background: none;
+      color: $brand;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  }
+}
+@media screen and (max-width:764px){
+  .contact-us-hero{
+    height: 50vh;
+    background: $brand;
+    clip-path: none;
+    .contact-us-image{
+        display: none;
+    }
+
+  }
+  .contact-us-text{
+    top: 70px;
+    width: 100%;
+    padding: 40px;
+    h1{
+      font-size: 2em;
+    }
+    .contact-form{
+      width: 95%;
+    }
+  }
+
+}

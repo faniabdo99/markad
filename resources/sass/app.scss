@@ -1,0 +1,83 @@
+//Variables
+@import "vars";
+/* GLOBAL CSS */
+*{
+  box-sizing: border-box;margin: 0;padding: 0;
+}
+body{
+  font-family: 'Nunito' , 'Tajawal', sans-serif;
+}
+ul{
+  list-style: none;
+}
+a:hover{
+  text-decoration: none;
+}
+.section-heading{
+  color: $brand;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+  &:before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: $brand;
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 3px;
+    border-radius: 50%;
+  }
+  &:after{
+    content: '';
+    width:15px;
+    height: 15px;
+    background: $brand;
+    display: inline-block;
+    margin-left: 25px;
+    margin-bottom: 3px;
+    border-radius: 50%;
+  }
+}
+.landing-page-camels{
+  height: 350px;
+  position: absolute;
+  left: 0;
+  display: block;
+  margin-top: -90px;
+}
+@media screen and (max-width:746px){
+  .landing-page-camels{
+    height: 200px;
+    margin-top: 0px;
+
+  }
+}
+/* ANIMATIONS CSS */
+@import "components/animations";
+/* NAVBAR CSS */
+@import "components/navbar";
+/* HERO CSS */
+@import "components/hero";
+/* GAME FEATURES CSS */
+@import "components/game-feauters";
+/* GAME MODS CSS */
+@import "components/game-mods";
+/* GAME TRACKS CSS */
+@import "components/game_tracks";
+/* MEDIA CSS */
+@import "components/media";
+/* ADS SERVICE CSS */
+@import "components/ads-service";
+/* HOME NEWS CSS */
+@import "components/home-news";
+/* DWONLOADS CSS */
+@import "components/downloads";
+/* TEAM CSS */
+@import "components/team";
+/* FOOTER CSS */
+@import "components/footer";
+/* FOOTER CSS */
+@import "components/contact";
+/* NEWS SECTION - HOME */
+@import "components/news/news-home"

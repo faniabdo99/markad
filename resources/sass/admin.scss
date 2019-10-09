@@ -1,0 +1,8 @@
+@import "vars";
+*{
+    font-family: 'Tajawal' , sans-serif;
+}
+/* ADMIN HOME */
+@import "components/admin/home";
+/* ADMIN LOGIN */
+@import "components/admin/login";
