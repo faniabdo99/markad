@@ -20,7 +20,7 @@
                                 </a>
                             </div>
                             <div class="col-md-6 col-xs-12 col-sm-12">
-                                <a href="#">
+                                <a href="{{route('admin.new')}}">
                                     <div class="card-single">
                                         <i class="fas fa-plus"></i>
                                         <p>اضافة مقال جديد</p>

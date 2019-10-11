@@ -1,11 +1,3 @@
-//Nice Scroll Plugin in CSS
-$("body").niceScroll({
-  cursorcolor:"#FCBA3B",
-  cursorwidth:"7px",
-  background:"rgba(0,0,0,0)",
-  cursorborderradius:2
-});
-
 //Navbar Color on Scroll
 $(window).scroll(function() {
     var nav = $('#navbar');
