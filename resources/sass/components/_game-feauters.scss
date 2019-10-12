@@ -1,10 +1,12 @@
 .game-feauters{
   padding: $sectionPadding;
+  position: relative;
   .in-middle-of-no-where{
-    display:block;
-    margin:0 auto 50px auto;
-    width: 400px;
-    height:400px;
+    position: absolute;
+    top: 60px;
+    left:-100px;
+    width: 200px;
+    height:200px;
   }
   .single-feature{
     display: flex;
