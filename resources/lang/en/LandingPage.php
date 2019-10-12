@@ -52,6 +52,8 @@ return [
     'DownloadsP' => 'Get The Traditional Camels All The Way to Your Phone Now ! Available For Both Android (9.1 +) And IOS (11.2 +)',
     'DownloadFromGooglePlay' => 'Download From Google Play',
     'DownloadFromAppStore' => 'Download From App Store',
+    'ComingSoon' => 'Coming Soon ...',
+    'ContactUs' => 'Contact Us',
     //Team
     'TeamHeading' => 'Our Team',
     'AZN' => 'Aboud Elzubair Mabloul',

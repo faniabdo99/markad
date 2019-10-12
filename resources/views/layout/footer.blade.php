@@ -35,9 +35,8 @@
       </div>
     <div class="col-md-4 col-xs-12 col-sm-12">
       <div class="footer-contact">
-        {{-- <h4>Contact Us</h4> --}}
         <ul>
-          <li><i class="fas fa-envelope"></i> <a href="mailto:faniabdo99@gmail.com">mail@domain.com</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:Info@markadracing.com">Info@markadracing.com</a></li>
           <li><i class="fas fa-phone"></i> +971 1125 2 51</li>
           <li><i class="fas fa-globe"></i> <a href="https://markadracing.com/">markadracing.com</a></li>
           <li><i class="fas fa-copyright"></i> Markad Racing 2020 &copy;</li>

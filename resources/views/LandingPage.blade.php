@@ -30,8 +30,8 @@
     </div>
   </section>
   <div class="container">
-
-  <section {{ __('LandingPage.dir')}} id="feauters" class="game-feauters">
+    <section {{ __('LandingPage.dir')}} id="feauters" class="game-feauters">
+        <img src="{{asset('public/images')}}/logo-fill.jpg" class="in-middle-of-no-where" >
     <div class="row" >
       <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
           <h2 class="section-heading">{{ __('LandingPage.FeautersHeading')}}</h2>
@@ -314,7 +314,7 @@
           <img src="{{asset('public/images/blog')}}/{{$Post->p_image}}" alt="{{$Post->p_title}}" title="{{$Post->p_title}}">
           <div class="text-container">
             <h3 class="text-left">{{str_limit($Post->p_title , 40)}}</h3>
-            <p class="text-left">{{str_limit($Post->p_description , 195)}}</p>
+            <p class="text-left">{{str_limit($Post->p_description , 155)}}</p>
           </div>
           <a class="read-more" href="{{route('blog.single' , $Post->p_slug )}}">{{__('LandingPage.ReadMore')}}</a>
         </div>
@@ -332,8 +332,10 @@
         <p class="{{__('LandingPage.textClass')}}">{{__('LandingPage.DownloadsP')}}</p>
       </div>
       <div class="col-md-6 col-xs-12 col-sm-12">
-        <a href="#" class="download-btn"><i class="fab fa-google-play"></i> {{__('LandingPage.DownloadFromGooglePlay')}}</a>
-        <a href="#" class="download-btn"><i class="fab fa-apple"></i> {{__('LandingPage.DownloadFromAppStore')}}</a>
+        <h3 class="text-center">{{__('LandingPage.ComingSoon')}}</h3>
+        <a href="{{route('ContactRoute')}}" class="coming-soon-contact">{{__('LandingPage.ContactUs')}}</a>
+       {{-- <a href="#" class="download-btn"><i class="fab fa-google-play"></i> {{__('LandingPage.DownloadFromGooglePlay')}}</a>
+        <a href="#" class="download-btn"><i class="fab fa-apple"></i> {{__('LandingPage.DownloadFromAppStore')}}</a>--}}
       </div>
     </div>
   </section>
