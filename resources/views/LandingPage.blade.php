@@ -16,7 +16,7 @@
             <div class="col-md-5 col-xs-12 col-sm-12">
               <div class="trailer-in-mobile">
                 <img src="{{asset('public/images')}}/mobile-frame.png" alt="Mobile frame" title="Mobile frame" >
-                <video controls>
+                <video muted controls autoplay>
                   <source src="{{asset('public/videos')}}/trailer.mp4" type="video/mp4">
                     {{ __('LandingPage.OutdatedBrowser')}}
                 </video>
@@ -176,7 +176,7 @@
       </div>
       <div class="col-md-4 col-xs-12 col-sm-12">
         <div class="single-game-track {{__('LandingPage.textClass')}}">
-          <img src="{{asset('public/images')}}/Al-marmoom.jpg" alt="Al Marmoom Track" title="Al Marmoom Track" >
+          <img src="{{asset('public/images')}}/al-marmoom.jpg" alt="Al Marmoom Track" title="Al Marmoom Track" >
           <div class="text-container">
             <h3>{{__('LandingPage.Track1H')}}</h3>
             <p>{{__('LandingPage.Track1P')}}</p>
@@ -185,7 +185,7 @@
       </div>
       <div class="col-md-4 col-xs-12 col-sm-12">
         <div class="single-game-track {{__('LandingPage.textClass')}}">
-          <img src="{{asset('public/images')}}/Al-Remah.jpg" alt="Al Remah Track" title="Al Remah Track" >
+          <img src="{{asset('public/images')}}/al-remah.jpg" alt="Al Remah Track" title="Al Remah Track" >
           <div class="text-container">
             <h3>{{__('LandingPage.Track2H')}}</h3>
             <p>{{__('LandingPage.Track2P')}}</p>
@@ -194,7 +194,7 @@
       </div>
       <div class="col-md-4 col-xs-12 col-sm-12">
         <div class="single-game-track {{__('LandingPage.textClass')}}">
-          <img src="{{asset('public/images')}}/Al-Wathba.jpg" alt="Al Wathba Track" title="Al Wathba Track" >
+          <img src="{{asset('public/images')}}/al-wathba.jpg" alt="Al Wathba Track" title="Al Wathba Track" >
           <div class="text-container">
             <h3>{{__('LandingPage.Track3H')}}</h3>
             <p>{{__('LandingPage.Track3P')}}</p>
@@ -210,7 +210,7 @@
       </div>
       <div class="col-md-7 col-xs-12 col-sm-12">
         <div class="media-video">
-          <video controls>
+          <video muted controls autoplay>
             <source src="{{asset('public/videos')}}/gameplay.mp4" type="video/mp4">
               {{__('LandingPage.OutdatedBrowser')}}
           </video>

@@ -20,7 +20,6 @@ class CreatePostsTable extends Migration
             $table->string('p_keywords');
             $table->string('p_image')->default('images/blog/default.png');
             $table->text('p_description');
-            $table->integer('p_section');
             $table->text('p_body');
             $table->integer('author_id')->nullable();
             $table->integer('p_views')->default(0);
