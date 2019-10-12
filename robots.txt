@@ -1,0 +1,5 @@
+User-agent:*
+disallow: /admin*
+disallow : /admin/*
+allow:*
+Sitemap: http://markadracing.com/sitemap.xml
