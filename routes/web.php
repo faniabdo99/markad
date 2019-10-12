@@ -25,4 +25,5 @@ Route::prefix('news')->group(function() {
     Route::get('/{slug}' , 'NewsController@getSingle')->name('blog.single');
     Route::post('/join' , 'NewsController@joinNewsLetter')->name('blog.join');
 });
+Route::get('/sitemap.xml' , 'SitemapsController@getSitemap');
 Auth::routes();
