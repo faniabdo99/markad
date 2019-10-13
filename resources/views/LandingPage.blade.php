@@ -14,7 +14,7 @@
               </ul>
             </div>
             <div class="col-md-5 col-xs-12 col-sm-12">
-              <div class="trailer-in-mobile">
+              <div dir="ltr" class="trailer-in-mobile">
                 <img src="{{asset('public/images')}}/mobile-frame.png" alt="Mobile frame" title="Mobile frame" >
                 <video muted controls autoplay>
                   <source src="{{asset('public/videos')}}/trailer.mp4" type="video/mp4">
@@ -30,7 +30,7 @@
     </div>
   </section>
   <div class="container">
-    <section {{ __('LandingPage.dir')}} id="feauters" class="game-feauters">
+    <section id="feauters" class="game-feauters">
         <img src="{{asset('public/images')}}/logo-fill.jpg" class="in-middle-of-no-where" >
     <div class="row" >
       <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
@@ -136,8 +136,8 @@
       </div>
       @endif
     </div>
-    <img src="{{asset('public/images')}}/camel-from-left.png" class="landing-page-camels" alt="Camel From Left" title="Camel From Left" >
   </section>
+  <img src="{{asset('public/images')}}/camel-from-left.png" class="landing-page-camels" alt="Camel From Left" title="Camel From Left" >
   <section class="game-mods">
     <div class="row">
       <div class="col-md-12 col-xs-12 col-sm-12">
@@ -281,6 +281,7 @@
             <br><br>
             {{__('LandingPage.AdService2P')}}
            </p>
+           <br><br>
         </div>
       </div>
       <div class="row">
@@ -307,14 +308,14 @@
         <h2 class="section-heading">{{__('LandingPage.NewsHeading')}}</h2>
       </div>
     </div>
-    <div class="row">
+    <div class="row" dir="{{__('LandingPage.dir')}}">
       @forelse ($ThreePosts as $Post)
       <div class="col-md-4 col-xs-12 col-sm-12">
         <div class="home-single-news">
           <img src="{{asset('public/images/blog')}}/{{$Post->p_image}}" alt="{{$Post->p_title}}" title="{{$Post->p_title}}">
           <div class="text-container">
-            <h3 class="text-left">{{str_limit($Post->p_title , 40)}}</h3>
-            <p class="text-left">{{str_limit($Post->p_description , 155)}}</p>
+            <h3 class="{{__('LandingPage.textClass')}}">{{str_limit($Post->p_title , 40)}}</h3>
+            <p class="{{__('LandingPage.textClass')}}">{{str_limit($Post->p_description , 155)}}</p>
           </div>
           <a class="read-more" href="{{route('blog.single' , $Post->p_slug )}}">{{__('LandingPage.ReadMore')}}</a>
         </div>
