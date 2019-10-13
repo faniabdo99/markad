@@ -1,4 +1,4 @@
-@include('layout.header' , ['PageTitle' => $PostDetailes->p_title . ' - ' . __('layout.GameTitle')])
+@include('layout.header' , ['PageTitle' => $PostDetailes->p_title . ' - ' . __('layout.GameTitle') , 'PageDesc' => $PostDetailes->p_description , 'PageKeywords' => $PostDetailes->p_keywords])
 <body class="news-home-body">
     @include('layout.navbar' , ['AlwaysActive' => 'all-scrolled'])
     <div class="container">
