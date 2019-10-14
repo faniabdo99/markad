@@ -1,6 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146525245-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-146525245-2');
+    </script>
     <!-- Page Encoding -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
