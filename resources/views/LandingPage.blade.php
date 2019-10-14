@@ -286,10 +286,10 @@
       </div>
       <div class="row">
         <div class="col-md-6 col-xs-12 col-sm-12">
-          <img src="{{asset('public/images')}}/ads1.png" alt="Host Your Ads on Markad Racing" title="Host Your Ads on Markad Racing">
+          <img src="{{asset('public/images')}}/trackes1.png" alt="Host Your Ads on Markad Racing" title="Host Your Ads on Markad Racing">
         </div>
         <div class="col-md-6 col-xs-12 col-sm-12">
-          <img src="{{asset('public/images')}}/ads2.png" alt="Host Your Ads on Markad Racing" title="Host Your Ads on Markad Racing">
+          <img src="{{asset('public/images')}}/trackes2.png" alt="Host Your Ads on Markad Racing" title="Host Your Ads on Markad Racing">
         </div>
       </div>
       </div>
