@@ -7,9 +7,9 @@
   .hero-content{
     height: 100vh;
     width: 100%;
-    background: rgba(0,0,0,0.8);
+    //background: rgba(0,0,0,0.8);
     padding: 30vh 10vh;
-    color: #fff;
+    color: $black;
     position: relative;
     h1{
       font-size: 4em;
@@ -90,6 +90,7 @@
 //Mobile Phone CSS
 @media screen and (max-width:764px){
   .hero{
+      background: url('../images/hero-sm.jpg') no-repeat center center;
     .hero-content{
       padding: 130px 3vh;
       position: relative;
