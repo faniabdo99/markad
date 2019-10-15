@@ -32,7 +32,7 @@ return [
     'GameTracksHeading' => 'Game Tracks',
     'Track1H' => 'Al Marmoom',
     'Track1P' => 'The true replica of the prominent camel racing track in Dubai is one of the tracks available for you to race in. Enjoy the scenic wonders',
-    'Track2H' => 'Al Remah',
+    'Track2H' => 'KSA - Remah',
     'Track2P' => 'The true replica of the prominent camel racing track in Dubai is one of the tracks available for you to race in. Enjoy the scenic wonders',
     'Track3H' => 'Al Wathba',
     'Track3P' => 'The acclaimed sandy track of Abu Dhabi is a part of Markad racing and imitates the realistic look and feel of Al Wathba.',

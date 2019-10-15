@@ -7,7 +7,7 @@ return [
      'dir' => 'rtl',
      'textClass' => 'text-right',
      //Landing Page Hero
-     'PageHeader' => 'سباق الجمال',
+     'PageHeader' => 'سباق الهجن',
      'PageDescription' => 'احصل على المتعة من حلبات سباق الجمال التقليدية مباشرة الى هاتفك !',
      'LearnMore' => 'اعرف المزيد',
      'WatchTrailer' => 'مشاهدة الاعلان',
@@ -29,7 +29,7 @@ return [
     'MPP' => 'العب مع اصدقائك أو عائلتك في أروع لعبة سباق جمال حالياً !',
     'WatchGameplay' => 'شاهد اللعب',
     //Game Tracks
-    'GameTracksHeading' => 'مسارات اللعب',
+    'GameTracksHeading' => 'ميادين السباق',
     'Track1H' => 'المرموم',
     'Track1P' => 'أحد مسارات اللعبة الأشهر في دبي متوفر لك لتلعبه في لعبة سباق الهجن ! استمتع بعجائب الطبيعة',
     'Track2H' => 'الرماح',
