@@ -7,7 +7,7 @@ return [
      'dir' => 'rtl',
      'textClass' => 'text-right',
      //Landing Page Hero
-     'PageHeader' => 'سباق الهجن',
+     'PageHeader' => 'سباق الجمال - الهجن',
      'PageDescription' => 'احصل على المتعة من حلبات سباق الجمال التقليدية مباشرة الى هاتفك !',
      'LearnMore' => 'اعرف المزيد',
      'WatchTrailer' => 'مشاهدة الاعلان',
