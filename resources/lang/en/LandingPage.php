@@ -30,11 +30,11 @@ return [
     'WatchGameplay' => 'Watch Gameplay',
     //Game Tracks
     'GameTracksHeading' => 'Game Tracks',
-    'Track1H' => 'Al Marmoom',
-    'Track1P' => 'The true replica of the prominent camel racing track in Dubai is one of the tracks available for you to race in. Enjoy the scenic wonders',
+    'Track1H' => 'Dubai - Al Marmoom',
+    'Track1P' => 'Enjoy the excitement in the most popular camel racing track in Dubai ! Get your camel ready for Al-Marmoom !',
     'Track2H' => 'KSA - Remah',
-    'Track2P' => 'The true replica of the prominent camel racing track in Dubai is one of the tracks available for you to race in. Enjoy the scenic wonders',
-    'Track3H' => 'Al Wathba',
+    'Track2P' => 'Get ready for the joy in Al-Remah !! Saudi Arabia number one track for camel racing!',
+    'Track3H' => 'Abu Dhabi - Al Wathba',
     'Track3P' => 'The acclaimed sandy track of Abu Dhabi is a part of Markad racing and imitates the realistic look and feel of Al Wathba.',
     //Media
     'MediaHeading' => 'Media',
