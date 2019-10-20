@@ -350,7 +350,7 @@
     <div class="row">
       <div class="col">
         <div class="team-member">
-          <img src="{{asset('public/images/team')}}/aboud.jpeg" alt="Aboud Elzubair Mabloul Image" title="Aboud Elzubair Mabloul Image" >
+          <img src="{{asset('public/images/team')}}/aboud.jpg" alt="Aboud Elzubair Mabloul Image" title="Aboud Elzubair Mabloul Image" >
           <h3>{{__('LandingPage.AZN')}}</h3>
           <p>{!!__('LandingPage.AZR')!!}</p>
         </div>
