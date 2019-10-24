@@ -11,6 +11,9 @@ return [
     'PageDescription' => 'Bringing the joy of traditional racing straight from the camel race tracks to your phone',
     'LearnMore' => 'Learn More',
     'WatchTrailer' => 'Watch Trailer',
+    //About
+    'AboutHeader' => 'The Markad Racing',
+    'AboutP' => 'Join players in the most fast and challenging camel racing! Enjoy a multiplayer system with your friends or an individual game, coming in 2020!<br><br>The game is available for Android and iPhone, enjoy the desert environment and traditional games for the first time on your mobile phone!',
     //Feauters
     'FeautersHeading' => 'Features',
     'TradStyRacingH' => 'Traditional style racing',

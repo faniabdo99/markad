@@ -1,0 +1,20 @@
+.about{
+    padding: $sectionPadding;
+    img{
+        width:200px;
+        height: auto;
+        display:block;
+        margin: auto;
+    }
+    p{
+        font-size:1.1em;
+        line-height: 1.8;
+    }
+}
+@media screen and (max-width:786px){
+    .about{
+        img{
+            margin-bottom:25px;
+        }
+    }
+}

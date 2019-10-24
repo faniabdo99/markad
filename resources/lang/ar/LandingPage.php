@@ -1,16 +1,20 @@
 <?php
 
 return [
-     //Various Stuff
-     'OutdatedBrowser' => 'عذراً , متصفحة لا يدعم تشغيل الفيديو',
-     //Page Directions and Styles
-     'dir' => 'rtl',
-     'textClass' => 'text-right',
-     //Landing Page Hero
-     'PageHeader' => 'سباق الجمال - الهجن',
-     'PageDescription' => 'احصل على المتعة من حلبات سباق الجمال التقليدية مباشرة الى هاتفك !',
-     'LearnMore' => 'اعرف المزيد',
-     'WatchTrailer' => 'مشاهدة الاعلان',
+    //Various Stuff
+    'OutdatedBrowser' => 'عذراً , متصفحة لا يدعم تشغيل الفيديو',
+    //Page Directions and Styles
+    'dir' => 'rtl',
+    'textClass' => 'text-right',
+    //Landing Page Hero
+    'PageHeader' => 'سباق الجمال - الهجن',
+    'PageDescription' => 'احصل على المتعة من حلبات سباق الجمال التقليدية مباشرة الى هاتفك !',
+    'LearnMore' => 'اعرف المزيد',
+    'WatchTrailer' => 'مشاهدة الاعلان',
+    //About
+    'AboutHeader' => 'لعبة سباق الهجن',
+    'AboutP' => 'انضم الى اللاعبين في أكثر سباقات الهجن سرعة و تحدي ! تمتع بنظام متعدد الاعبين مع أصدقائك او لعبة فردية , قادمة في عام 2020 !<br><br>
+    اللعبة متوفرة لأجهزة الأندرويد و الآيفون , تمتع بالبيئة الصحراوية و الألعاب التقليدية لأول مرة على هاتفك المحمول !',
      //Feauters
     'FeautersHeading' => 'المميزات',
     'TradStyRacingH' => 'سباق على الطريقة التقليدية',

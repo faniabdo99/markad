@@ -20,6 +20,7 @@ footer{
       }
       p{
         color: #fff;
+        font-size:0.9em;
       }
     }
   }
@@ -31,6 +32,7 @@ footer{
           display: block;
           color: #fff;
           text-align: center;
+          font-size:0.9em;
         }
       }
     }
@@ -40,7 +42,7 @@ footer{
       padding-left: 40px;
       li{
         margin-bottom: 15px;
-        font-size: 1.1em;
+        font-size:0.9em;
         color:#fff;
         a{
           color:#fff;
@@ -48,6 +50,7 @@ footer{
         i{
           color:$brand;
           margin-right: 10px;
+          margin-left: 10px;
         }
       }
     }

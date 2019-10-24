@@ -30,8 +30,22 @@
     </div>
   </section>
   <div class="container">
+    <section id="about" class="about">
+      <div class="row">
+        <div class="com-md-12 col-xs-12 col-sm-12">
+          <h2 class="section-heading">{{ __('LandingPage.AboutHeader')}}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-xs-6 col-sm-6">
+          <img src="{{asset('public/images')}}/logo-fill.jpg" alt="Markad Racing Logo" title="Markad Racing Logo" >
+        </div>
+        <div class="col-md-8 col-xs-6 col-sm-6">
+          <p dir="{{__('LandingPage.dir')}}" class="{{__('LandingPage.textClass')}}">{!! __('LandingPage.AboutP')!!}</p>
+        </div>
+      </div>
+    </section>
     <section id="feauters" class="game-feauters">
-        <img src="{{asset('public/images')}}/logo-fill.jpg" class="in-middle-of-no-where" >
     <div class="row" >
       <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
           <h2 class="section-heading">{{ __('LandingPage.FeautersHeading')}}</h2>
@@ -144,11 +158,11 @@
         <h2 class="section-heading">{{ __('LandingPage.GameModesHeading')}}</h2>
       </div>
       <div class="col-md-6 col-xs-6 col-sm-6">
-        <div class="single-game-mode {{__('LandingPage.textClass')}}" dir="{{__('LandingPage.dir')}}">
+        <div class="single-game-mode">
           <div class="image-container">
             <img src="{{asset('public/images')}}/single_player.jpg" alt="{{ __('LandingPage.SPH')}}" title="{{ __('LandingPage.SPH')}}" >
           </div>
-          <div class="text-container">
+          <div class="text-container {{__('LandingPage.textClass')}}" dir="{{__('LandingPage.dir')}}">
             <h3>{{ __('LandingPage.SPH')}}</h3>
             <p>{{ __('LandingPage.SPP')}}</p>
             <a class="youtube-link"><i class="fab fa-youtube"></i> {{ __('LandingPage.WatchGameplay')}}</a>
@@ -156,11 +170,11 @@
         </div>
       </div>
       <div class="col-md-6 col-xs-6 col-sm-6">
-        <div class="single-game-mode  {{__('LandingPage.textClass')}}" dir="{{__('LandingPage.dir')}}" >
+        <div class="single-game-mode" >
           <div class="image-container">
             <img src="{{asset('public/images')}}/multi_player.jpg" alt="{{ __('LandingPage.MPH')}}" title="{{ __('LandingPage.MPH')}}" >
           </div>
-          <div class="text-container">
+          <div class="text-container {{__('LandingPage.textClass')}}" dir="{{__('LandingPage.dir')}}">
             <h3>{{ __('LandingPage.MPH')}}</h3>
             <p>{{ __('LandingPage.MPP')}}</p>
             <a class="youtube-link"><i class="fab fa-youtube"></i> {{ __('LandingPage.WatchGameplay')}}</a>
