@@ -1,5 +1,34 @@
 .team{
   padding: $sectionPadding;
+  .owner{
+    width:100%;
+    background: $light-gray;
+    padding:25px;
+    display: flex;
+    flex-basis: 0;
+    align-items: center;
+    margin-bottom:100px;
+    .image-container{
+      flex:1;
+      img{
+        width:175px;
+        height:175px;
+        border:5px solid $brand;
+        border-radius: 50%;
+      }
+    }
+    .content-container{
+      flex:3;
+      b{
+        color:$brand;
+        display: block;
+      }
+      span{
+        color:$dark-gray;
+        display: block;
+      }
+    }
+  }
   .team-member{
     background: $light-gray;
     text-align: center;

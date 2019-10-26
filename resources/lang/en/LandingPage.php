@@ -59,6 +59,9 @@ return [
     'ContactUs' => 'Contact Us',
     //Team
     'TeamHeading' => 'Our Team',
+    'OwnerDescription' => 'Camels Racing is a substantial sport played in UAE and Gulf Countries , We like to share our culter with the world in most funny way !',
+    'OwnerName' => 'Salem Slayem Aldouda Alameri ',
+    'OwnerRole' => 'Markad Racing Owner',
     'AZN' => 'Aboud Elzubair Mabloul',
     'AZR' => 'Team Leader <br> Software Engineer',
     'NFN' => 'Noor-ul-Ain Fatima',
