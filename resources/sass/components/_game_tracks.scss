@@ -12,7 +12,8 @@
   .text-container{
     background: $light-gray;
     padding:10px;
-    min-height: 150px;
+    height: 190px;
+
     h3{
       color:$black;
       font-weight: bold;
@@ -32,6 +33,7 @@
     margin: 0 auto 20px auto;
 
     .text-container{
+      height: 100px;
       h3{
         font-size: 1em;
       }

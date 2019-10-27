@@ -32,10 +32,10 @@
     <meta property="og:title" content="@if(isset($PageTitle)){{$PageTitle}}@else {{__('layout.HeadTitle')}}@endif">
     <meta property="og:description" content="@if(isset($PageDesc)){{$PageDesc}}@else{{__('layout.HeadDesc')}}@endif">
     <meta property="og:url" content="{{url()->current()}}">
-    <meta property="og:image" content="{{asset('public/images')}}/logo-fill/jpg" />
+    <meta property="og:image" content="{{asset('public/images')}}/logo-fill.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Markad Racing">
-    <meta property="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@markadRacing">
-    <meta name="twitter:creator" content="@markadRacing">
+    <meta property="twitter:card" content="{{__('layout.HeadDesc')}}" />
+    <meta name="twitter:site" content="@MarkadRacing">
+    <meta name="twitter:creator" content="@MarkadRacing">
   </head>

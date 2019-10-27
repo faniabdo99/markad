@@ -15,7 +15,7 @@
             </div>
             <div class="col-md-5 col-xs-12 col-sm-12">
               <div dir="ltr" class="trailer-in-mobile">
-                <img src="{{asset('public/images')}}/mobile-frame.png" alt="Mobile frame" title="Mobile frame" >
+                {{--<img src="{{asset('public/images')}}/mobile-frame.png" alt="Mobile frame" title="Mobile frame" >--}}
                 <video muted controls autoplay>
                   <source src="{{asset('public/videos')}}/trailer.mp4" type="video/mp4">
                     {{ __('LandingPage.OutdatedBrowser')}}
@@ -151,7 +151,7 @@
       @endif
     </div>
   </section>
-  <img src="{{asset('public/images')}}/camel-from-left.png" class="landing-page-camels" alt="Camel From Left" title="Camel From Left" >
+  <img src="{{asset('public/images')}}/camel-from-left-full.png" class="landing-page-camels" alt="Camel From Left" title="Camel From Left" >
   <section class="game-mods">
     <div class="row">
       <div class="col-md-12 col-xs-12 col-sm-12">
@@ -233,51 +233,51 @@
       <div class="col-md-5 col-xs-12 col-sm-12">
         <h3 class="{{__('LandingPage.textClass')}}">{{__('LandingPage.SeeInAction')}}</h3>
         <br>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="mediaSlider" class="carousel slide" data-ride="carousel">
 
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="{{asset('public/images/media-slider')}}/image1.jpg" alt="" title="">
+              <img src="{{asset('public/images/media-slider')}}/1.png" alt="" title="">
             
             </div>
             <div class="carousel-item">
-              <img src="{{asset('public/images/media-slider')}}/image2.jpg" alt="" title="">
+              <img src="{{asset('public/images/media-slider')}}/2.png" alt="" title="">
             
             </div>
             <div class="carousel-item">
-              <img src="{{asset('public/images/media-slider')}}/image3.jpg" alt="" title="">
+              <img src="{{asset('public/images/media-slider')}}/3.png" alt="" title="">
             
             </div>
             <div class="carousel-item">
-              <img src="{{asset('public/images/media-slider')}}/image4.jpg" alt="" title="">
+              <img src="{{asset('public/images/media-slider')}}/4.png" alt="" title="">
             
             </div>
             <div class="carousel-item">
-              <img src="{{asset('public/images/media-slider')}}/image5.jpg" alt="" title="">
+              <img src="{{asset('public/images/media-slider')}}/5.png" alt="" title="">
             
             </div>
             <div class="carousel-item">
-              <img src="{{asset('public/images/media-slider')}}/image6.jpg" alt="" title="">
+              <img src="{{asset('public/images/media-slider')}}/6.png" alt="" title="">
             
             </div>
             <div class="carousel-item">
-              <img src="{{asset('public/images/media-slider')}}/image7.jpg" alt="" title="">
+              <img src="{{asset('public/images/media-slider')}}/7.png" alt="" title="">
             
             </div>
             <div class="carousel-item">
-              <img src="{{asset('public/images/media-slider')}}/image8.jpg" alt="" title="">
+              <img src="{{asset('public/images/media-slider')}}/8.png" alt="" title="">
             
             </div>
 
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <p class="carousel-control-prev" href="#mediaSlider" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          </p>
+          <p class="carousel-control-next" href="#mediaSlider" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
-          </a>
+          </p>
         </div>
       </div>
 
