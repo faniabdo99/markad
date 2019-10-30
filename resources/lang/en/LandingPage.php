@@ -79,6 +79,15 @@ return [
     'AFN' => 'Ahmed Gamal Fouad',
     'AFR' => 'Game Development Consultant',
     'TLN' => 'Tarun Luthra',
-    'TLR' => 'Game Consultant'
+    'TLR' => 'Game Consultant',
+    //NewsLetter
+    'NewsletterHeading' => 'Newsletter',
+    'NewsLetterP' => 'Join Markad Racing Newsletter to get the latest news and articles right into your inbox !',
+    'NewsLetterB' => 'Join',
+    'NewsLetterLabel' => 'Email',
+    'NewsLetterPlaceholder' => 'Enter your email here',
+    'NewsLetterSuccess' => 'Your email has been added!',
+    'NewsLetterFailur' => 'Something went wrong! Please try again.',
+    'NewsLetterExists'=> 'Your Email is Already Added !'
 
 ];

@@ -10,6 +10,11 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function(){
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
     // Add smooth scrolling to all links
     $("a").on('click', function(event) {
   
@@ -32,4 +37,25 @@ $(document).ready(function(){
         });
       } // End if
     });
+    //Navbar Newsletter Toggler
+    $('#navbar-newsletter-link').click(function(){
+      $('.newsletter-navbar-form').fadeToggle('fast');
+    });
+    //Home Newsletter Ajax Call
+    $('#newsletter-form').submit(function(e){
+      e.preventDefault();
+        var OldButtonValue = $('#join-newsletter').val();
+        $('#join-newsletter').val('...');
+        $.ajax({
+          url: 'newsletter-add' ,
+          type: "POST",
+          data: $('#newsletter-form').serialize(),
+          success: function( response ) {
+              $('#newsletter-form').val('Submit');
+              $('#join-newsletter').val(OldButtonValue);
+              $('.ajax-response').html(response.msg);
+              document.getElementById("newsletter-form").reset(); 
+          }
+        });
+      });
   });

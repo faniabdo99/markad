@@ -313,7 +313,6 @@
         </div>
       </div>
       </div>
-    </div>
   </section>
 <div class="container">
   <section class="home-news">
@@ -354,8 +353,29 @@
       </div>
     </div>
   </section>
+</div>
+  <section class="news-letter {{__('LandingPage.textClass')}}" dir="{{__('LandingPage.dir')}}">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <h2>{{__('LandingPage.NewsletterHeading')}}</h2>
+          <p>{{__('LandingPage.NewsLetterP')}}</p>
+          <div class="ajax-response"></div>
+        </div>
+        <div class="col-md-7">
+          <form id="newsletter-form" action="#" method="post">
+            @csrf
+            <label>{{__('LandingPage.NewsLetterLabel')}}</label>
+            <input required type="email" name="email" placeholder="{{__('LandingPage.NewsLetterPlaceholder')}}">
+            <input type="submit" id="join-newsletter" value="{{__('LandingPage.NewsLetterB')}}">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+<div class="container">
   <section class="team" id="team">
-    <div class="row">
+  <div class="row">
       <div class="col">
           <h2 class="section-heading">{{__('LandingPage.TeamHeading')}}</h2>
         <br><br>

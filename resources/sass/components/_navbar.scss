@@ -59,6 +59,66 @@
       }
     }
   }
+  form{
+    input{
+      background:rgba(0,0,0,0.6);
+      border:none;outline:none;
+      &[type='submit']{
+        background:none;
+        color:$brand;
+      }
+    }
+  }
+}
+.newsletter-navbar-form{
+  display:none;
+  background:#fff;
+  position: fixed;
+  margin-top:80px;
+  left:0;
+  width:100%;
+  padding:40px;
+  text-align:center;
+  z-index:9999999;
+  box-shadow:0px 0px 20px rgba(0,0,0,0.6);
+  h3{
+    color:$brand;
+    font-weight:bold;
+  }
+  .ajax-response{
+    margin-top:10px;
+    .success{
+      color:#27e727;
+    }
+    .error{
+      color:#b81818;
+    }
+  }
+  form{
+    width:50%;
+    margin:auto;
+    padding:10px;
+    label{
+      display:block;
+      font-weight:bold;
+      font-size:0.9em;
+    }
+    input{
+      display: block;
+      border-radius:4px;
+      padding:10px;
+      background:$light-gray;
+      width:100%;
+      border:none;
+      margin-bottom:10px;
+      &[type='submit']{
+        background:$brand;
+        width:25%;
+        margin: auto;
+        color:$black;
+      }
+    }
+  }
 }
 @media screen and (max-width:764px){
   .navbar{
@@ -67,6 +127,12 @@
     }
     .navbar-toggler-icon{
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+  }
+  .newsletter-navbar-form{
+   
+    form{
+      width:90%;
     }
   }
 }

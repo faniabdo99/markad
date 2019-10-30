@@ -1,0 +1,56 @@
+.news-letter{
+    width:100%;
+    padding:$sectionPadding;
+    background:$light-gray;
+    margin-top:25px;
+    h2{
+        color:$brand;
+        margin-bottom:15px;
+    }
+    p{
+        color:$dark-gray;
+    }
+    .ajax-response{
+        .success{
+            background:#08be18;
+            color:#fff;
+            padding:10px 10px 12px 10px;
+            border-radius:4px;
+            text-align: center;
+        }
+        .error{
+            background:#be0808;
+            color:#fff;
+            padding:10px 10px 12px 10px;
+            border-radius:4px;
+            text-align: center;
+        }
+    }
+    form{
+        label{
+            color:$black;
+            font-weight: bold;
+            font-size:0.9em;
+            display: block;
+        }
+        input[type="submit"]{
+            border:none;
+            background:$brand;
+            border-radius: 4px;
+            color:$black;
+            padding:10px 25px;
+            display: block;
+        }
+        input[type="email"]{
+            display: block;
+            width:100%;
+            border-radius:4px;
+            padding:10px;
+            color:$black;
+            border:2px solid $brand;
+            outline:none;
+            background:#fff;
+            margin-bottom:10px;
+        }
+    }
+}
