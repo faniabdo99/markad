@@ -38,24 +38,39 @@ $(document).ready(function(){
       } // End if
     });
     //Navbar Newsletter Toggler
-    $('.navbar-newsletter-link').click(function(){
+    $('#navbar-newsletter-link').click(function(){
       $('.newsletter-navbar-form').fadeToggle('fast');
     });
     //Home Newsletter Ajax Call
-    $('.newsletter-form').submit(function(e){
+    $('#newsletter-form , #home-newsletter-form').submit(function(e){
       e.preventDefault();
-        var OldButtonValue = $('.join-newsletter').val();
-        $('.join-newsletter').val('...');
+        var OldButtonValue = $('#join-newsletter').val();
+        $('#join-newsletter').val('...');
         $.ajax({
           url: 'newsletter-add' ,
           type: "POST",
-          data: $('.newsletter-form').serialize(),
+          data: $('#newsletter-form').serialize(),
           success: function( response ) {
-              $('.newsletter-form').val('Submit');
-              $('.join-newsletter').val(OldButtonValue);
+              $('#join-newsletter').val(OldButtonValue);
               $('.ajax-response').html(response.msg);
-              $('.newsletter-form').reset(); 
+              $("#newsletter-form").reset(); 
           }
         });
       });
+
+      $('#home-join-newsletter').click(function(event){
+          event.preventDefault();
+          var OldButtonValue = $('#home-join-newsletter').val();
+          $('#home-join-newsletter').val('...');
+          $.ajax({
+            url: 'newsletter-add' ,
+            type: "POST",
+            data: $('#home-newsletter-form').serialize(),
+            success: function( response ) {
+                $('#home-join-newsletter').val(OldButtonValue);
+                $('.ajax-response').html(response.msg);
+                $("#home-newsletter-form").reset(); 
+            }
+          });
+        });
   });
