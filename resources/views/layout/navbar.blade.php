@@ -22,7 +22,7 @@
 <div class="newsletter-navbar-form" dir="{{__('LandingPage.dir')}}">
     <h3>{{__('LandingPage.NewsletterHeading')}}</h3>
     <p>{{__('LandingPage.NewsLetterP')}}</p>
-    <form id="newsletter-form" action="#" method="post">
+    <form id="newsletter-form" method="post">
       @csrf
       <label class="{{__('LandingPage.textClass')}}">{{__('LandingPage.NewsLetterLabel')}}</label>
       <input type="email" name="email" required placeholder="{{__('LandingPage.NewsLetterPlaceholder')}}">

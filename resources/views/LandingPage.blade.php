@@ -363,8 +363,8 @@
           <div class="ajax-response"></div>
         </div>
         <div class="col-md-7">
-          <form id="newsletter-form" action="#" method="post">
-            @csrf
+          <form id="newsletter-form" method="post">
+              @csrf
             <label>{{__('LandingPage.NewsLetterLabel')}}</label>
             <input required type="email" name="email" placeholder="{{__('LandingPage.NewsLetterPlaceholder')}}">
             <input type="submit" id="join-newsletter" value="{{__('LandingPage.NewsLetterB')}}">
