@@ -237,35 +237,35 @@
 
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="{{asset('public/images/media-slider')}}/1.png" alt="" title="">
+              <img src="{{asset('public/images/media-slider')}}/CamelRenderA.jpg" alt="Camel Charachter" title="Camel Charachter">
             
             </div>
             <div class="carousel-item">
-              <img src="{{asset('public/images/media-slider')}}/2.png" alt="" title="">
+              <img src="{{asset('public/images/media-slider')}}/CamelRenderB.jpg" alt="Camel Charachter B" title="Camel Charachter B">
             
             </div>
             <div class="carousel-item">
-              <img src="{{asset('public/images/media-slider')}}/3.png" alt="" title="">
+              <img src="{{asset('public/images/media-slider')}}/CamelRenderC.jpeg" alt="" title="">
             
             </div>
             <div class="carousel-item">
-              <img src="{{asset('public/images/media-slider')}}/4.png" alt="" title="">
+              <img src="{{asset('public/images/media-slider')}}/D1.jpg" alt="" title="">
             
             </div>
             <div class="carousel-item">
-              <img src="{{asset('public/images/media-slider')}}/5.png" alt="" title="">
+              <img src="{{asset('public/images/media-slider')}}/E1.jpg" alt="" title="">
             
             </div>
             <div class="carousel-item">
-              <img src="{{asset('public/images/media-slider')}}/6.png" alt="" title="">
+              <img src="{{asset('public/images/media-slider')}}/F1.jpg" alt="" title="">
             
             </div>
             <div class="carousel-item">
-              <img src="{{asset('public/images/media-slider')}}/7.png" alt="" title="">
+              <img src="{{asset('public/images/media-slider')}}/G1.jpg" alt="" title="">
             
             </div>
             <div class="carousel-item">
-              <img src="{{asset('public/images/media-slider')}}/8.png" alt="" title="">
+              <img src="{{asset('public/images/media-slider')}}/H1.jpg" alt="" title="">
             
             </div>
 

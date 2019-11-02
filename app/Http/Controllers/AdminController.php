@@ -5,9 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use Validator;
+use Mail;
+//Mails
+use App\Mail\NewsLetterEmail;
 //Models
 use App\Post;
 use App\Message;
+use App\NewsLetter;
 
 
 class AdminController extends Controller{
@@ -30,7 +34,7 @@ class AdminController extends Controller{
     }
 
     public function UploadPost(Request $request){
-        //Validate the Data Befor Posting to DB
+        //Validate the Data Before Posting to DB
         $BlogPostRules = [
             'p_title' => 'required|max:255',
             'p_slug' => 'required|unique:posts,p_slug',
@@ -48,7 +52,7 @@ class AdminController extends Controller{
             'p_keywords.required' => 'لا يمكن لحقل الكلمات المفتاحية أن يكون فارغاً' ,
             'p_description.required' => 'لا يمكن لحقل شرح المقال المختصر أن يكون فارغاً' ,
             'p_description.max' => 'لا يمكن لحقل شرح المقال أن يزيد عن 800 حرف' ,
-            'p_body.required' => 'لا يمكن لحقل نص المقال أن يكون فارغاً' 
+            'p_body.required' => 'لا يمكن لحقل نص المقال أن يكون فارغاً'
         ];
         $validatedData = Validator::make( $request->all(), $BlogPostRules, $ValidatorErros );
         if ($validatedData->fails()) {
@@ -71,17 +75,25 @@ class AdminController extends Controller{
             $Post->p_description = $request->input('p_description');
             $Post->p_body = $request->input('p_body');
             $Post->author_id = $author_id;
+            //Send The Email
+            //Get Users Emails as an array
+            $EmailData = $request->all();
+            $NewsLetterUsers = Newsletter::all();
+            $UsersEmails = [];
+            foreach($NewsLetterUsers as $UserEmail){
+                array_push($UsersEmails,$UserEmail->email); 
+            }
+            Mail::to($UsersEmails)->send(new NewsLetterEmail($EmailData));
             $Post->save();
             return back()->with('success' , 'تم انشاء المقال الجديد بنجاح!');
-            
+
         }
     }
-
     public function DeletePost($id){
-        $Post = new Post; 
+        $Post = new Post;
         $PostExist = $Post::find($id);
         if($PostExist == null){
-            //Redirect back 
+            //Redirect back
             return back()->withErrors('تم حذف المقال بالفعل');
         }else{
             $PostOwner = $PostExist->author_id;
@@ -116,7 +128,7 @@ class AdminController extends Controller{
             'p_keywords.required' => 'لا يمكن لحقل الكلمات المفتاحية أن يكون فارغاً' ,
             'p_description.required' => 'لا يمكن لحقل شرح المقال المختصر أن يكون فارغاً' ,
             'p_description.max' => 'لا يمكن لحقل شرح المقال أن يزيد عن 800 حرف' ,
-            'p_body.required' => 'لا يمكن لحقل نص المقال أن يكون فارغاً' 
+            'p_body.required' => 'لا يمكن لحقل نص المقال أن يكون فارغاً'
         ];
         $validatedData = Validator::make( $request->all(), $BlogPostRules, $ValidatorErros );
         if ($validatedData->fails()) {
@@ -133,7 +145,7 @@ class AdminController extends Controller{
                         'p_description' => $request->input('p_description'),
                         'p_body' => $request->input('p_body'),
                         'author_id' => $author_id
-                     ]);         
+                     ]);
             return back()->with('success' , 'تم تحديث المقال بنجاح!');
     }
 }
@@ -144,8 +156,8 @@ public function logout(){
 }
 
 
-//Messages Logic 
-//First Function , Get All The Messages and Loop Through'em 
+//Messages Logic
+//First Function , Get All The Messages and Loop Through'em
 public function getMessages(){
     $AllMessages = Message::orderBy('is_support_ticket' , 'desc')->where('is_archived' , '!=' , '1')->get();
     $AllArchived = Message::where('is_archived' , '=' , '1')->get();
@@ -154,7 +166,7 @@ public function getMessages(){
 public function DeleteMessage($id){
     $MessageItSelf = Message::find($id);
     if($MessageItSelf == null){
-        //Do Nothing 
+        //Do Nothing
         return back()->withError('Message Already Deleted');
     }else{
         $MessageItSelf->delete();
@@ -165,7 +177,7 @@ public function DeleteMessage($id){
 public function ArchiveMessage($id){
     $MessageItSelf = Message::find($id);
     if($MessageItSelf->is_archived == 1){
-        //Do Nothing 
+        //Do Nothing
         return back()->withError('Message Already Archived');
     }else{
         $MessageClass = new Message;

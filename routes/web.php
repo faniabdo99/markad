@@ -4,6 +4,8 @@ Route::get('/', 'PagesController@getLandingPage')->name('LandingPageRoute');
 Route::get('/contact', 'PagesController@getContactPage')->name('ContactRoute');
 Route::post('/contact', 'ContactController@ProccessContact')->name('ContactRouteProccess');
 Route::any('/newsletter-add' , 'NewsLetterController@postNewsLetter')->name('newsletter.post');
+Route::get('email' , 'AdminController@sendMail');
+Route::view('email2' , 'mail.NewsLetterEmail');
 Route::middleware(['auth'])->group(function () {
     Route::prefix('admin')->group(function () {
         Route::get('/' , 'AdminController@getIndex')->name('admin.home');

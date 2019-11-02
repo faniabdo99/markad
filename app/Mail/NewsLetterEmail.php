@@ -16,9 +16,9 @@ class NewsLetterEmail extends Mailable
      *
      * @return void
      */
-    public function __construct()
-    {
-        //
+    public $EmailData;
+    public function __construct($EmailData){
+        $this->EmailData = $EmailData;
     }
 
     /**
@@ -28,6 +28,6 @@ class NewsLetterEmail extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        return $this->view('mail.NewsLetterEmail' , compact('EmailData'));
     }
 }
