@@ -8,22 +8,17 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto" dir="{{__('LandingPage.dir')}}">
-      <li class="nav-item"><a id="navbar-newsletter-link" class="nav-link" href="javascript:;"><i class="fas fa-envelope"></i></a></li>
       <li class="nav-item"><a class="nav-link" href="{{route('LandingPageRoute')}}">{{__('layout.Home')}}</a></li>
       <li class="nav-item"><a class="nav-link" href="{{route('blog.index')}}">{{__('layout.News')}}</a></li>
       <li class="nav-item"><a class="nav-link" href="{{route('ContactRoute')}}">{{__('layout.Contact')}}</a></li>
       <li class="nav-item"><a class="nav-link" href="{{route('LandingPageRoute')}}#team">{{__('layout.Team')}}</a></li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          تغيير اللغة
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{route('changeLang' , 'ar')}}">العربية</a>
-          <a class="dropdown-item" href="{{route('changeLang' , 'en')}}">English</a>
-        </div>
+      <li class="nav-item">
+          <span class="nav-link"><i class="fas fa-translate"></i><a class="text-white" href="{{route('changeLang' , 'ar')}}">عربي</a> / <a class="text-white" href="{{route('changeLang' , 'en')}}">EN</a></span>
       </li>
+      <li class="nav-item"><a id="navbar-newsletter-link" class="nav-link" href="javascript:;"><i class="fas fa-envelope"></i></a></li>
+
     </ul>
-    <ul class="navbar-nav ml-auto" dir="{{__('LandingPage.dir')}}">
+    <ul class="navbar-nav mr-auto" dir="{{__('LandingPage.dir')}}">
         <li class="nav-item special-link pull-right"><a class="nav-link" href="{{route('LandingPageRoute')}}#downloads"><i class="fas fa-download"></i> {{__('layout.Downloads')}}</a></li>
     </ul>
   </div>
