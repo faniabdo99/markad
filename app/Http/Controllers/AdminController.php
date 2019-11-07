@@ -60,7 +60,7 @@ class AdminController extends Controller{
         }else{
             if($request->has('p_image')){
                 $imageName = time().'.'.request()->p_image->getClientOriginalExtension();
-                request()->p_image->move(public_path('images/blog'), $imageName);
+                request()->p_image->storeAs('images/blog' , $imageName);
             }else{
                 $imageName = 'default.png';
             }

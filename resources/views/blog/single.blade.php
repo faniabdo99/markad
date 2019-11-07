@@ -11,7 +11,7 @@
                         <li><i class="fas fa-user"></i> {{$PostDetailes->Author->name}}</li>
                     </ul>
                     <h1 class="{{__('LandingPage.textClass')}}" dir="{{__('LandingPage.dir')}}" >{{$PostDetailes->p_title}}</h1>
-                    <img src="{{ asset('public/images/blog')}}/{{$PostDetailes->p_image}}" alt="{{$PostDetailes->p_title}}" title="{{$PostDetailes->p_title}}" >
+                    <img src="{{url('storage/app/images/blog/')."/".$PostDetailes->p_image}}" alt="{{$PostDetailes->p_title}}" title="{{$PostDetailes->p_title}}" >
                 </div>
                 <br><br>
                     <div class="news-single-post-content {{__('LandingPage.textClass')}}" dir="{{__('LandingPage.dir')}}">
