@@ -134,7 +134,6 @@ class AdminController extends Controller{
         if ($validatedData->fails()) {
             return back()->withInput()->withErrors($validatedData->errors()->all());
         }else{
-            dd($request->all());
             $Post = new Post;
             $ThePost = $Post::find($id);
             if($request->has('p_image')){
@@ -150,6 +149,7 @@ class AdminController extends Controller{
                         'p_title' => $request->input('p_title'),
                         'p_slug' => $request->input('p_slug'),
                         'p_keywords' => $request->input('p_keywords'),
+                        'p_image' => $imageName,
                         'p_description' => $request->input('p_description'),
                         'p_body' => $request->input('p_body'),
                         'author_id' => $author_id

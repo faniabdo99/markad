@@ -26,7 +26,7 @@
                             </div>
                         @endif
                         <h4>اضافة مقال جديد</h4>
-                        <form action="{{ route('admin.UpdatePost' , $ThePost->id) }}" method="POST">
+                        <form action="{{ route('admin.UpdatePost' , $ThePost->id) }}" enctype="multipart/form-data" method="POST">
                             @csrf
                             <div class="new-post-group">
                                 <label>عنوان المقال</label>
