@@ -12,10 +12,20 @@
       <li class="nav-item"><a class="nav-link" href="{{route('LandingPageRoute')}}">{{__('layout.Home')}}</a></li>
       <li class="nav-item"><a class="nav-link" href="{{route('blog.index')}}">{{__('layout.News')}}</a></li>
       <li class="nav-item"><a class="nav-link" href="{{route('ContactRoute')}}">{{__('layout.Contact')}}</a></li>
-      <li class="nav-item"><a class="nav-link" href="#team">{{__('layout.Team')}}</a></li>
-      <li class="nav-item special-link pull-right"><a class="nav-link" href="#downloads"><i class="fas fa-download"></i> {{__('layout.Downloads')}}</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{route('LandingPageRoute')}}#team">{{__('layout.Team')}}</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          تغيير اللغة
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{route('changeLang' , 'ar')}}">العربية</a>
+          <a class="dropdown-item" href="{{route('changeLang' , 'en')}}">English</a>
+        </div>
+      </li>
     </ul>
-
+    <ul class="navbar-nav ml-auto" dir="{{__('LandingPage.dir')}}">
+        <li class="nav-item special-link pull-right"><a class="nav-link" href="{{route('LandingPageRoute')}}#downloads"><i class="fas fa-download"></i> {{__('layout.Downloads')}}</a></li>
+    </ul>
   </div>
 </nav>
 </header>

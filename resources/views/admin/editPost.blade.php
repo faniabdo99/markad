@@ -39,6 +39,11 @@
                                 <p class="tip">تعرف باسم Slug , لا بد أن تكون بالانجليزي فقط وبدون حروف غريبة , ويتم استبدال المسافات بال - او _ , مقال : how-to-do-somthing</p>
                             </div>
                             <div class="new-post-group">
+                                <label>صورة المقال</label>
+                                <input type="file" name="p_image">
+                                <p class="tip">ينصح خبراء ال SEO ان تكون الصورة صغيرة الحجم قدر الامكان وان يكون اسم الصورة مشابه لعنوان المقال أو مطابق له</p>
+                            </div>
+                            <div class="new-post-group">
                                 <label>الكلمات المفتاحية</label>
                                 <input maxlength="255" type="text" name="p_keywords" value="{{$ThePost->p_keywords}}" >
                                 <p class="tip">كلمات المقال المفتاحية يجب أن تكون مفصولة بفاصلة , مثال : برمجة , تصميم , محاسبة </p>

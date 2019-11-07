@@ -76,15 +76,15 @@ class AdminController extends Controller{
             $Post->p_body = $request->input('p_body');
             $Post->author_id = $author_id;
             $Post->save();
-            //Send The Email
+            /*== Send The Email ==*/
             //Get Users Emails as an array
-            $EmailData = $request->all();
+            $EmailData = $request->only(['p_title', 'p_slug' , 'p_description']);
             $NewsLetterUsers = Newsletter::all();
             $UsersEmails = [];
             foreach($NewsLetterUsers as $UserEmail){
                 array_push($UsersEmails,$UserEmail->email); 
             }
-            //Mail::to($UsersEmails)->send(new NewsLetterEmail($EmailData));
+            Mail::to($UsersEmails)->send(new NewsLetterEmail($EmailData));
             return back()->with('success' , 'تم انشاء المقال الجديد بنجاح!');
 
         }
@@ -134,8 +134,16 @@ class AdminController extends Controller{
         if ($validatedData->fails()) {
             return back()->withInput()->withErrors($validatedData->errors()->all());
         }else{
+            dd($request->all());
             $Post = new Post;
             $ThePost = $Post::find($id);
+            if($request->has('p_image')){
+                $imageName = time().'.'.$request->p_image->getClientOriginalExtension();
+                $request->p_image->storeAs('images/blog' , $imageName);
+            }else{
+                $imageName = $ThePost->p_image;
+            }
+            
             $author_id = auth()->user()->id;
             $ThePost->where('id' , $id)
                     ->update([
