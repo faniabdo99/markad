@@ -75,6 +75,7 @@ class AdminController extends Controller{
             $Post->p_description = $request->input('p_description');
             $Post->p_body = $request->input('p_body');
             $Post->author_id = $author_id;
+            $Post->save();
             //Send The Email
             //Get Users Emails as an array
             $EmailData = $request->all();
@@ -83,8 +84,7 @@ class AdminController extends Controller{
             foreach($NewsLetterUsers as $UserEmail){
                 array_push($UsersEmails,$UserEmail->email); 
             }
-            Mail::to($UsersEmails)->send(new NewsLetterEmail($EmailData));
-            $Post->save();
+            //Mail::to($UsersEmails)->send(new NewsLetterEmail($EmailData));
             return back()->with('success' , 'تم انشاء المقال الجديد بنجاح!');
 
         }
