@@ -407,21 +407,21 @@
       </div>
     </div>
     <div class="row">
-      <div class="col">
+      <div class="col-md-4 col-xs-6 col-sm-6">
         <div class="team-member">
           <img src="{{asset('public/images/team')}}/aboud.jpg" alt="Aboud Elzubair Mabloul Image" title="Aboud Elzubair Mabloul Image" >
           <h3>{{__('LandingPage.AZN')}}</h3>
           <p>{!!__('LandingPage.AZR')!!}</p>
         </div>
       </div>
-      <div class="col">
+      <div class="col-md-4 col-xs-6 col-sm-6">
         <div class="team-member">
           <img src="{{asset('public/images/team')}}/Project_Manager.jpg" alt="Noor-ul-Ain Fatima Image" title="Noor-ul-Ain Fatima Image" >
           <h3>{{__('LandingPage.NFN')}}</h3>
           <p>{!!__('LandingPage.NFR')!!}</p>
         </div>
       </div>
-      <div class="col">
+      <div class="col-md-4 col-xs-6 col-sm-6">
         <div class="team-member">
           <img src="{{asset('public/images/team')}}/Developer.jpg" alt="Shoaib Sadaqat Image" title="Shoaib Sadaqat Image" >
           <h3>{{__('LandingPage.SSN')}}</h3>
@@ -430,21 +430,21 @@
       </div>
     </div>
     <div class="row">
-      <div class="col">
+      <div class="col-md-4 col-xs-6 col-sm-6">
         <div class="team-member">
           <img src="{{asset('public/images/team')}}/Artist.jpg" alt="Muhammad Arsalan Image" title="Muhammad Arsalan Image" >
           <h3>{{__('LandingPage.MAN')}}</h3>
           <p>{!!__('LandingPage.MAR')!!}</p>
         </div>
       </div>
-      <div class="col">
+      <div class="col-md-4 col-xs-6 col-sm-6">
         <div class="team-member">
           <img src="{{asset('public/images/team')}}/BackendDev.jpg" alt="Jazeb Munir Image" title="Jazeb Munir Image" >
           <h3>{{__('LandingPage.JMN')}}</h3>
           <p>{!!__('LandingPage.JMR')!!}</p>
         </div>
       </div>
-      <div class="col">
+      <div class="col-md-4 col-xs-6 col-sm-6">
         <div class="team-member">
           <img src="{{asset('public/images/team')}}/GameDesigner.jpg" alt="Maha Nawaz Image" title="Maha Nawaz Image" >
           <h3>{{__('LandingPage.MNN')}}</h3>
@@ -453,21 +453,21 @@
       </div>
     </div>
     <div class="row">
-      <div class="col">
+      <div class="col-md-4 col-xs-6 col-sm-6">
         <div class="team-member">
           <img src="{{asset('public/images/team')}}/animator.jpg" alt="Gi E. Valdez Image" title="Gi E. Valdez Image" >
           <h3>{{__('LandingPage.GVN')}}</h3>
           <p>{!!__('LandingPage.GVR')!!}<br><br></p>
         </div>
       </div>
-      <div class="col">
+      <div class="col-md-4 col-xs-6 col-sm-6">
         <div class="team-member">
           <img src="{{asset('public/images/team')}}/lecturer.jpeg" alt="Ahmed Gamal Fouad Image" title="Ahmed Gamal Fouad Image" >
           <h3>{{__('LandingPage.AFN')}}</h3>
           <p>{!!__('LandingPage.AFR')!!}<br><br></p>
         </div>
       </div>
-      <div class="col">
+      <div class="col-md-4 col-xs-6 col-sm-6">
         <div class="team-member">
           <img src="{{asset('public/images/team')}}/consultor.jpeg" alt="Tarun Luthra Image" title="Tarun Luthra Image" >
           <h3>{{__('LandingPage.TLN')}}</h3>

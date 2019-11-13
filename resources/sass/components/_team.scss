@@ -52,3 +52,26 @@
     }
   }
 }
+@media screen and (max-width:764px){
+ .team{
+  .owner{
+    flex-direction: column;
+    .image-container{
+      img{
+        margin-bottom:35px;
+      }
+    }
+    .content-container{
+      flex:3;
+      b{
+        color:$brand;
+        display: block;
+      }
+      span{
+        color:$dark-gray;
+        display: block;
+      }
+    }
+  }
+ } 
+}

@@ -20,7 +20,7 @@
     <title>@if(isset($PageTitle)) {{$PageTitle}} @else {{__('layout.HeadTitle')}} @endif</title>
     <!-- StyleSheets -->
     <link rel="stylesheet" href="{{asset('public/css')}}/bootstrap.min.css" >
-    <link rel="stylesheet" href="{{asset('public/css')}}/app.css?version=1.0" >
+    <link rel="stylesheet" href="{{asset('public/css')}}/app.css?version=1.0.1" >
     @if(strstr(Request::path() , 'admin'))<link rel="stylesheet" href="{{asset('public/css')}}/admin.css" >@endif
     <!-- CDN Includes -->
     <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet">
