@@ -322,6 +322,16 @@
       </div>
     </div>
     <div class="row" dir="{{__('LandingPage.dir')}}">
+      {{-- <div class="col-md-4 col-xs-12 col-sm-12">
+        <div class="home-single-news">
+          <img src="storage/app/images/blog/{{$Post->p_image}}" alt="{{$Post->p_title}}" title="{{$Post->p_title}}">
+          <div class="text-container">
+            <h3 class="{{__('LandingPage.textClass')}}">{{str_limit($Post->p_title , 40)}}</h3>
+            <p class="{{__('LandingPage.textClass')}}">{{str_limit($Post->p_description , 155)}}</p>
+          </div>
+          <a class="read-more" href="{{route('blog.single' , $Post->p_slug )}}">{{__('LandingPage.ReadMore')}}</a>
+        </div>
+      </div> --}}
       @forelse ($ThreePosts as $Post)
       <div class="col-md-4 col-xs-12 col-sm-12">
         <div class="home-single-news">

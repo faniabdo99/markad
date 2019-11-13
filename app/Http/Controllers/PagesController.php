@@ -14,7 +14,7 @@ class PagesController extends Controller{
   }
     public function getLandingPage(){
       
-      $ThreePosts = Post::orderBy('created_at' , 'desc')->limit(5)->where('p_slug' , '!==' ,'shik-zayed-care-about-camels')->get();
+      $ThreePosts = Post::orderBy('created_at' , 'desc')->limit(5)->get();
       return view('LandingPage' , ['ThreePosts' => $ThreePosts]);
     }
 
