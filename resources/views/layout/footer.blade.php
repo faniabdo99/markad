@@ -24,8 +24,8 @@
             </div>
             <div class="col">
               <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
+                <li><a href="https://www.facebook.com/markadracing/" target="_blank"><i class="fab fa-facebook"></i></a><a href="https://twitter.com/markadracing/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/markad_racing/" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://www.youtube.com/channel/UChXbWoZqt5S-FH3mM4QeQcQ" target="_blank"><i class="fab fa-youtube"></i></a></li>
                 <li><a href="{{route('changeLang' , 'en')}}">English</a></li>
                 <li><a href="{{route('changeLang' , 'ar')}}">عربي</a></li>
               </ul>

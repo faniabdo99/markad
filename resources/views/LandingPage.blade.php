@@ -10,7 +10,7 @@
               <p  class="{{__('LandingPage.textClass')}}">{{ __('LandingPage.PageDescription')}}</p>
               <ul class="hero-buttons">
                 <li><a class="get-started" href="#feauters">{{ __('LandingPage.LearnMore')}}</a></li>
-                <li><a class="watch-trailer" href="#"><i class="fab fa-youtube"></i>  {{ __('LandingPage.WatchTrailer')}}</a></li>
+                <li><a class="watch-trailer" href="https://www.youtube.com/channel/UChXbWoZqt5S-FH3mM4QeQcQ" target="_blank"><i class="fab fa-youtube"></i>  {{ __('LandingPage.WatchTrailer')}}</a></li>
               </ul>
             </div>
             <div class="col-md-5 col-xs-12 col-sm-12">
@@ -165,7 +165,7 @@
           <div class="text-container {{__('LandingPage.textClass')}}" dir="{{__('LandingPage.dir')}}">
             <h3>{{ __('LandingPage.SPH')}}</h3>
             <p>{{ __('LandingPage.SPP')}}</p>
-            <a class="youtube-link"><i class="fab fa-youtube"></i> {{ __('LandingPage.WatchGameplay')}}</a>
+            <a  href="https://www.youtube.com/channel/UChXbWoZqt5S-FH3mM4QeQcQ" target="_blank" class="youtube-link"><i class="fab fa-youtube"></i> {{ __('LandingPage.WatchGameplay')}}</a>
           </div>
         </div>
       </div>
@@ -177,7 +177,7 @@
           <div class="text-container {{__('LandingPage.textClass')}}" dir="{{__('LandingPage.dir')}}">
             <h3>{{ __('LandingPage.MPH')}}</h3>
             <p>{{ __('LandingPage.MPP')}}</p>
-            <a class="youtube-link"><i class="fab fa-youtube"></i> {{ __('LandingPage.WatchGameplay')}}</a>
+            <a href="https://www.youtube.com/channel/UChXbWoZqt5S-FH3mM4QeQcQ" target="_blank" class="youtube-link"><i class="fab fa-youtube"></i> {{ __('LandingPage.WatchGameplay')}}</a>
           </div>
         </div>
       </div>

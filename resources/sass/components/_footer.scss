@@ -29,10 +29,13 @@ footer{
       li{
         margin-bottom: 20px;
         a{
-          display: block;
+          display: inline-block;
           color: #fff;
           text-align: center;
           font-size:0.9em;
+          .fab{
+            margin-left:30px;
+          }
         }
       }
     }
