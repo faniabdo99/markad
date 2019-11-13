@@ -322,17 +322,7 @@
       </div>
     </div>
     <div class="row" dir="{{__('LandingPage.dir')}}">
-      {{-- <div class="col-md-4 col-xs-12 col-sm-12">
-        <div class="home-single-news">
-          <img src="storage/app/images/blog/{{$Post->p_image}}" alt="{{$Post->p_title}}" title="{{$Post->p_title}}">
-          <div class="text-container">
-            <h3 class="{{__('LandingPage.textClass')}}">{{str_limit($Post->p_title , 40)}}</h3>
-            <p class="{{__('LandingPage.textClass')}}">{{str_limit($Post->p_description , 155)}}</p>
-          </div>
-          <a class="read-more" href="{{route('blog.single' , $Post->p_slug )}}">{{__('LandingPage.ReadMore')}}</a>
-        </div>
-      </div> --}}
-      @forelse ($ThreePosts as $Post)
+  
       <div class="col-md-4 col-xs-12 col-sm-12">
         <div class="home-single-news">
           <img src="storage/app/images/blog/1573655212.jfif" alt="اهتمام زايد بالهجن تعبير صادق عن الوفاء للماضي" title="اهتمام زايد بالهجن تعبير صادق عن الوفاء للماضي">
@@ -341,6 +331,17 @@
             <p class="{{__('LandingPage.textClass')}}">أرسى المغفور له باذن الله تعالى الشيخ زايد بن سلطان آل نهيان قواعد لعبة سباق الهجن , على الرغم من التطور السريع الذي تعيشه دولة الامارات الا ان الشيخ زايد...</p>
           </div>
           <a class="read-more" href="{{route('blog.single' , 'shik-zayed-care-about-camels' )}}">{{__('LandingPage.ReadMore')}}</a>
+        </div>
+      </div>
+      @forelse ($ThreePosts as $Post)
+      <div class="col-md-4 col-xs-12 col-sm-12">
+        <div class="home-single-news">
+          <img src="storage/app/images/blog/{{$Post->p_image}}" alt="{{$Post->p_title}}" title="{{$Post->p_title}}">
+          <div class="text-container">
+            <h3 class="{{__('LandingPage.textClass')}}">{{str_limit($Post->p_title , 40)}}</h3>
+            <p class="{{__('LandingPage.textClass')}}">{{str_limit($Post->p_description , 155)}}</p>
+          </div>
+          <a class="read-more" href="{{route('blog.single' , $Post->p_slug )}}">{{__('LandingPage.ReadMore')}}</a>
         </div>
       </div>
       @empty 
