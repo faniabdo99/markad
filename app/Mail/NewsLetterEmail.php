@@ -29,6 +29,7 @@ class NewsLetterEmail extends Mailable
     public function build()
     {
         return $this->view('mail.NewsLetterEmail')
+                    ->form('no-reply@markadracing.com' , 'Markad Racing - سباق الهجن')
                     ->subject('مقال جديد - لعبة سباق الهجن');
     }
 }
