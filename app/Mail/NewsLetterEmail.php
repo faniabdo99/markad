@@ -28,6 +28,7 @@ class NewsLetterEmail extends Mailable
      */
     public function build()
     {
-        return $this->view('mail.NewsLetterEmail');
+        return $this->view('mail.NewsLetterEmail')
+                    ->subject('مقال جديد - لعبة سباق الهجن');
     }
 }
