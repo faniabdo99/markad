@@ -1,5 +1,7 @@
 .game-feauters{
-  padding: $sectionPadding;
+  background: $black;
+  color:#fff;
+  padding: 180px 50px;
   position: relative;
   .in-middle-of-no-where{
     position: absolute;
@@ -28,12 +30,12 @@
     }
     .feauter-text{
       h3{
-        color: $black;
+        color: #fff;
         font-weight: bold;
         font-size: 1.5em;
       }
       p{
-        color: $dark-gray;
+        color: #fff;
         font-size: 1em;
       }
     }

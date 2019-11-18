@@ -45,6 +45,7 @@
         </div>
       </div>
     </section>
+  </div>
     <section id="feauters" class="game-feauters">
     <div class="row" >
       <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
@@ -151,6 +152,7 @@
       @endif
     </div>
   </section>
+<div class="container">
   <img src="{{asset('public/images')}}/camel-from-left-full.png" class="landing-page-camels" alt="Camel From Left" title="Camel From Left" >
   <section class="game-mods">
     <div class="row">
