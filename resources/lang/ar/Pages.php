@@ -15,5 +15,14 @@ return [
     'Message' => 'الرسالة :',
     'MessagePlaceholder' => 'أدخل رسالتك هنا',
     'SendAsContact' => 'ارسال',
-    'SendAsTicket' => 'ارسال كتذكرة دعم'
+    'SendAsTicket' => 'ارسال كتذكرة دعم',
+    //Newsletter
+    'NewsletterLeaveTitle' => 'الغاء الاشتراك في القائمة البريدية',
+    'NewsletterLeaveP' => 'يؤسفنا رؤيتك تغادر ...',
+    'NewsletterLeaveEnterEmailH' => 'أدخل بريدك الإلكتروني' , 
+    'NewsletterLeavePlaceholder' => 'أدخل بريدك الالكتروني هنا' , 
+    'NewsletterLeaveSubmit' => 'الغاء الاشتراك',
+    'NewsletterLeaveEmailRequired' => 'حقل البريد الإلكتروني مطلوب',
+    'NewsletterLeaveDeleted' => 'تم ازالة بريدك الإلكتروني بنجاح',
+    'NewsletterLeaveNotFound' => 'لم نستطع ايجاد بريدك الإلكتروني ! حاول مجدداً'
 ];

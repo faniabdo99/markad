@@ -24,4 +24,20 @@ class NewsLetterController extends Controller{
         }
      
     }
+    public function getOutNewsLetter(){
+        return view('newsletter-out');
+    }
+    public function postOutNewsLetter(Request $r){
+        if($r->email == null or empty($r->email) or $r->email == ""){
+            return back()->withErrors(trans('Pages.NewsletterLeaveEmailRequired'));
+        }else{
+            $NewsLetter = NewsLetter::where('email' , $r->email)->first();
+            if(isset($NewsLetter->exists)){
+                $NewsLetter->delete();
+                return back()->withSuccess(trans('Pages.NewsletterLeaveDeleted'));
+            }else {
+                return back()->withErrors(trans('Pages.NewsletterLeaveNotFound'));
+            }
+        }
+    }
 }

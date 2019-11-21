@@ -15,5 +15,14 @@ return [
     'Message' => 'Message :',
     'MessagePlaceholder' => 'Enter Your Message Here',
     'SendAsContact' => 'Send Message',
-    'SendAsTicket' => 'Send As Support Ticket'
+    'SendAsTicket' => 'Send As Support Ticket',
+    //Newsletter
+    'NewsletterLeaveTitle' => 'Unsubscribe From Markad Racing Newsletter',
+    'NewsletterLeaveP' => 'We are sorry to see you go ...',
+    'NewsletterLeaveEnterEmailH' => 'Enter Your Email' , 
+    'NewsletterLeavePlaceholder' => 'Enter your email here' , 
+    'NewsletterLeaveSubmit' => 'Unsubscribe',
+    'NewsletterLeaveEmailRequired' => 'Your email is required',
+    'NewsletterLeaveDeleted' => 'Success , Your email has been removed',
+    'NewsletterLeaveNotFound' => 'We can\'t find your email ! check again'
 ];

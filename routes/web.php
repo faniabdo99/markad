@@ -5,6 +5,8 @@ Route::middleware('https')->group(function(){
     Route::get('/contact', 'PagesController@getContactPage')->name('ContactRoute');
     Route::post('/contact', 'ContactController@ProccessContact')->name('ContactRouteProccess');
     Route::any('/newsletter-add' , 'NewsLetterController@postNewsLetter')->name('newsletter.post');
+    Route::get('/newsletter-out' , 'NewsLetterController@getOutNewsLetter')->name('newsletter.out.get');
+    Route::post('/newsletter-out' , 'NewsLetterController@postOutNewsLetter')->name('newsletter.out.post');
     Route::middleware(['auth'])->group(function () {
         Route::prefix('admin')->group(function () {
             Route::get('/' , 'AdminController@getIndex')->name('admin.home');
