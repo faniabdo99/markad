@@ -1,9 +1,7 @@
 <?php
 Route::get('setlocale/{locale}', "PagesController@ChangeLanguage")->name('changeLang');
 Route::middleware('https')->group(function(){
-    Route::get('privacy' , function(){
-        return "";
-    });
+    Route::get('privacy' , 'PagesController@getPrivacy')->name('PrivacyRoute');
     Route::get('/', 'PagesController@getLandingPage')->name('LandingPageRoute');
     Route::get('/contact', 'PagesController@getContactPage')->name('ContactRoute');
     Route::post('/contact', 'ContactController@ProccessContact')->name('ContactRouteProccess');

@@ -21,4 +21,8 @@ class PagesController extends Controller{
     public function getContactPage(){
       return view('contact');
     }
+
+    public function getPrivacy(){
+      return view('privacy');
+    }
 }
