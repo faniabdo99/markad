@@ -1,61 +1,126 @@
-<h2>PRIVACY POLICY FOR MOBILE APPLICATIONS by MARKAD RACING</h2>
-This privacy policy governs your use of software application for mobile devices that are created by jackorta.
+@include('layout.header' , ['PageTitle' => 'Markad Racing Privacy Policy'])
+<div>
+<strong>What’s Changed:</strong> Please note the changes in the definition of <strong>“Markad Racing ,”</strong> changes in “Sharing Your Information,” “Analytics, Advertising and Other Services Provided by Other Companies” and in “Your Choices” below.<br/><br/>
 
-What information does the Application obtain and how is it used?
-<p>
-<strong>User Provided Information</strong>
-</p>
-The Application obtains the information you provide when you download and register the Application. Registration with us is optional. However, please keep in mind that you may not be able to use some of the features offered by the Application unless you register with us.
+This Privacy Policy explains how information about you is collected, used and disclosed by Markad Racing  and its subsidiaries (“Markad Racing  ,” “we” or “us”). This Privacy Policy applies to information we collect when you use our websites, mobile applications and other online products and services (collectively, the “Services”). This Privacy Policy does not apply to the information collected from: <br/>
+<strong>(1)</strong> web-based applications that are based on our mobile applications but are published by third parties, <br/>
+<strong>(2)</strong> mobile applications that we distribute on behalf of third parties and which are hosted and operated by such parties, or <br/>
+<strong>(3)</strong> the on-line submission of resumes and employment applications in connection with the Jobs section of our website.<br/><br/>
 
-When you register with us and use the Application, you generally provide (a) your name, email address, age, user name, password and other registration information; (b) transaction-related information, such as when you make purchases, respond to any offers, or download or use applications from us; (c) information you provide us when you contact us for help; (d) credit card information for purchase and use of the Application, and; (e) information you enter into our system when using the Application, such as contact information and project management information.
+We may change this Privacy Policy from time to time. If we make changes, we will notify you by revising the date at the top of the policy and, in some cases, we may provide you with additional notice (such as by adding a statement to our homepage or mobile applications or by sending you an email notification). We encourage you to review the Privacy Policy whenever you access the Services to stay informed about our information practices and the ways you can help protect your privacy.<br/><br/>
 
-We may also use the information you provided us to contact your from time to time to provide you with important information, required notices and marketing promotions.
-<p>
-<strong>Automatically Collected Information</strong>
-</p>
-In addition, the Application may collect certain information automatically, including, but not limited to, the type of mobile device you use, your mobile devices unique device ID, the IP address of your mobile device, your mobile operating system, the type of mobile Internet browsers you use, and information about the way you use the Application.
-<h4>Does the Application collect precise real time location information of the device?</h4>
-This Application does not collect precise information about the location of your mobile device.
+<h5 class="pull-left">Use Information:</h5>
+<div class="clearfix"></div>
+We collect information about your use of the Services, including the type of browser you use, access times, pages viewed, game play activity, interactions with other players, your IP address and the page you visited before navigating to our Services.<br/><br/>
 
-Do third parties see and/or have access to information obtained by the Application?
+<strong>Information Collected by Cookies and Other Tracking Technologies:</strong><br/> 
 
-Yes. We will share your information with third parties only in the ways that are described in this privacy statement.
+We use various technologies to collect information, and this may include sending cookies to your computer or mobile device. Cookies are small data files stored on your hard drive or in device memory that helps us to improve our Services and your experience, see which areas and features of our Services are popular and count visits. For more information about cookies, and how to disable them, please see “Your Choices” below. We may also collect information using web beacons (also known as “tracking pixels”). Web beacons are electronic images that may be used in our Services or emails and help deliver cookies, count visits, understand usage and campaign effectiveness and determine whether an email has been opened and acted upon.<br/><br/>
 
-We may disclose User Provided and Automatically Collected Information:
+<strong>Other Information Collected with Permission:</strong><br/> 
+
+Our mobile applications that are distributed through various “app” stores may also request permission to automatically collect other information from your mobile device, including your email address. We may only collect this information with your authorization in accordance with your device operating system’s permission process.<br/><br/>
+
+<strong>Information We Collect From Other Sources</strong><br/> 
+
+We may also obtain information from other sources and combine that with information we collect through our Services. For example, if you create or log into your account through a social media site, we will have access to certain information from that site, such as your name, account information, profile picture, phone number, email address, gender, date of birth and friends lists, in accordance with the authorization procedures determined by such social media site.<br/><br/>
+
+<h5 class="pull-left">Use Of Information:</h5>
+<div class="clearfix"></div>
+
+<strong>We may use information about you for various purposes, including to:</strong><br/> 
 <ul>
-	<li>as required by law, such as to comply with a subpoena, or similar legal process;</li>
-
-	<li>when we believe in good faith that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;</li>
-	<li>with our trusted services providers who work on our behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.</li>
-	<li>if jackorta is involved in a merger, acquisition, or sale of all or a portion of its assets, you will be notified via email and/or a prominent notice on our Web site of any change in ownership or uses of this information, as well as any choices you may have regarding this information.</li>
-
-	<li>to advertisers and third party advertising networks and analytics companies as described in the section below</li>
+<li>Provide, maintain and improve our Services;</li>
+<li>Setup your gWallet account and manage the Markad Racing  credits that you earn and use across our Services;</li>
+<li>Provide and deliver the products and services you request and send you related information, including confirmations and invoices;</li>
+<li>Send you communications about products, services, offers, promotions, rewards, and events offered by Markad Racing  and other companies, and provide news and information we think will be of interest to you;</li>
+<li>Send you technical notices, updates, security alerts and support and administrative messages;</li>
+<li>Respond to your comments, questions and requests and provide customer service;</li>
+<li>Monitor and analyze trends, usage and activities in connection with our Services;</li>
+<li>Personalize and improve the Services and provide advertisements, content, suggested connections or features that match user profiles or activities;</li>
+<li>Process and deliver contest entries and rewards;</li>
+<li>Link or combine with information we get from others to help understand your needs and provide you with better service; and Carry out any other purpose for which the information was collected.</li>
 </ul>
-<strong>Automatic Data Collection and Advertising</strong>
+<div class="clearfix"></div>
+ 
+<strong>Markad Racing </strong> is based in the United Arab Emirated and the information we collect is governed by UAE law. By accessing or using the Services or otherwise providing information to us, you consent to the processing and transfer of information in and to the UAE and other countries.<br/><br/>
 
-We may work with analytics companies to help us understand how the Application is being used, such as the frequency and duration of usage. We work with advertisers and third party advertising networks, who need to know how you interact with advertising provided in the Application which helps us keep the cost of the Application low or free. Advertisers and advertising networks use some of the information collected by the Application, including, but not limited to, the unique identification ID of your mobile device and your mobile telephone number. To protect the anonymity of this information, we use an encryption technology to help ensure that these third parties canâ€™t identify you personally. These third parties may also obtain anonymous information about other applications youâ€™ve downloaded to your mobile device, the mobile websites you visit, your non-precise location information (e.g., your zip code), and other non- precise location information in order to help analyze and serve anonymous targeted advertising on the Application and elsewhere. We may also share encrypted versions of information you have provided in order to enable our partners to append other available information about you for analysis or advertising related use.
 
-If youâ€™d like to opt-out from third party use of this type of information to help serve targeted advertising, please visit the section entitled â€œOpt-outâ€ below.
-<h4><strong>What are my opt-out rights?</strong></h4>
-There are multiple opt-out options for users of this Application:
+<h5 class="pull-left">Sharing of Information:</h5>
+<div class="clearfix"></div>
 
-Opt-out of all information collection by uninstalling the Application: You can stop all collection of information by the Application easily by uninstalling the Application. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network.
+<strong>We may share information about you as follows or as otherwise described in this Privacy Policy:</strong><br/> 
+<ul>
+<li>With vendors, consultants and other service providers who need access to such information to carry out work on our behalf;</li>
+<li>With other users of the in connection with the social features of the Services. For example, your username, profile picture and the virtual content you have accumulated in a game may be visible to other users of that game. Additionally, information that you provide in your account registration for a forum and your forum comments may be available to other forum users.</li>
+<li>In response to a request for information if we believe disclosure is in accordance with any applicable law, regulation or legal process, or as otherwise required by any applicable law, rule or regulation; If we believe your actions are inconsistent with the spirit or language of our user agreements or policies, or to protect the rights, property and safety of Markad Racing  or others;</li>
+<li>In connection with, or during negotiations of, any merger, sale of company assets, financing or acquisition of all or a portion of our business to another company; or</li>
+<li>With your consent or at your direction, including if we notify you through our Services that the information you provide will be shared in a particular manner and you provide such information.
+We may also share aggregated or de-identified information, which cannot reasonably be used to identify you.</li>
+ 
+</ul>
+<div class="clearfix"></div>
 
-<strong>Data Retention Policy, Managing Your Information</strong>
 
-We will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. We will retain Automatically Collected information for up to 24 months and thereafter may store it in aggregate. If youâ€™d like us to delete User Provided Data that you have provided via the Application, please contact us at info@markadracing.com and we will respond in a reasonable time. Please note that some or all of the User Provided Data may be required in order for the Application to function properly.
-<h4><strong>Children</strong></h4>
-We do not use the Application to knowingly solicit data from or market to children under the age of 13. If a parent or guardian becomes aware that his or her child has provided us with information without their consent, he or she should contact us at info@markadracing.com . We will delete such information from our files within a reasonable time.
-<h4></h4>
-<h4><strong>Security</strong></h4>
-We are concerned about safeguarding the confidentiality of your information. We provide physical, electronic, and procedural safeguards to protect information we process and maintain. For example, we limit access to this information to authorized employees and contractors who need to know that information in order to operate, develop or improve our Application. Please be aware that, although we endeavor provide reasonable security for information we process and maintain, no security system can prevent all potential security breaches.
-<h4><strong>Changes</strong></h4>
-This Privacy Policy may be updated from time to time for any reason. We will notify you of any changes to our Privacy Policy by posting the new Privacy Policy here. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes. You can check the history of this policy on this page.
-<p>
-<strong>Your Consent</strong>
-</p>
-By using the Application, you are consenting to our processing of your information as set forth in this Privacy Policy now and as amended by us. "Processing, means using cookies on a computer/hand held device or using or touching information in any way, including, but not limited to, collecting, storing, deleting, using, combining and disclosing information, all of which activities will take place in United Arab Emirates. If you reside outside United Arab Emirates, your information will be transferred, processed and stored there under United Arab Emirates privacy standards.
-<p>
-<strong>Contact us</strong>
-</p>
-If you have any questions regarding privacy while using the Application, or have questions about our practices, please contact us via email at info@markadracing.com .
+ 
+  
+<h5 class="pull-left">Social Sharing Features</h5>
+<div class="clearfix"></div> 
+
+The Services may offer social sharing features and other integrated tools (such as the Facebook “Like” button), which let you share actions you take on our Services with other media, and vice versa. The use of such features enables the sharing of information with your friends or the public, depending on the settings you establish with the entity that provides the social sharing feature. For more information about the purpose and scope of data collection and processing in connection with social sharing features, please visit the privacy policies of the entities that provide these features.<br/><br/>
+
+<strong>Analytics, Advertising and Other Services Provided by Other Companies</strong><br/>
+
+We may allow third parties to serve advertisements in connection with our Services, to provide analytics services and provide you with other services, such as rewards programs and tournaments. These third parties may use cookies, web beacons, your account information (that you set up with these third parties) and other technologies to collect information about you on our Services and other websites and online services, such as your IP addresses, identifiers associated with your mobile device or applications on the device, the browsers you use to visit our Services, pages viewed, time spent on pages, links clicked, and conversion information. These third parties may also share this information with their customers and clients. This information may be used by Markad Racing , and these other companies and their customers and clients, to analyze and track data, determine the popularity of certain content, deliver advertising and content targeted to your interests, and better understand your usage. Some of these third-party analytics and advertising services offer you a choice to opt out the collection of and/or sharing of this information; links to the opt-out mechanisms for the third parties that offer such a choice can be found in the “Your Choices” section below. This Privacy Policy does not apply to, and we are not responsible for, third-party cookies, web beacons, or other tracking technologies.<br/><br/>
+
+<strong>Security</strong><br/>
+
+<strong>Markad Racing </strong> takes reasonable measures to help protect information about you from loss, theft, misuse and unauthorized access, disclosure, alteration and destruction.<br/><br/>
+
+
+
+
+
+<h5 class="pull-left">Your Choices</h5>
+<div class="clearfix"></div> 
+<strong>Website Account Information</strong><br/>
+You may update, correct or delete your website account information, which includes your username, password, email address and avatar, by logging into your website account and managing your profile. If you wish to delete or deactivate your website account, please email us at <a href="#">info@markadracing.com</a>, but note that we may retain certain information as required by law or for legitimate business purposes. We may also retain cached or archived copies of your website account information for a certain period of time.<br/><br/>
+
+<strong>Cookies</strong><br/>
+
+Most web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove or reject browser cookies. Please note that if you choose to remove or reject cookies, this could affect the availability and functionality of our Services.<br/><br/>
+
+<strong>Push Notifications</strong><br/>
+
+With your consent, we may send push notifications (or “alerts”) to your mobile device to provide game activity information, service updates, promotional communications and other related messages. You can deactivate push notifications by changing your notification settings via your device.<br/><br/>
+
+<strong>Promotional Communications</strong><br/>
+
+You may opt out of receiving promotional messages from Markad Racing  by following the instructions in those messages or by contacting us at <a href="#">privacy@markadracing.com</a><br/><br/>
+
+. If you opt out, we may still send you transactional or relationship messages, such as those about your account or our ongoing business relations. Third Party Analytics and Advertising Services<br/><br/>
+
+<strong>We have identified the provider names of some of the third-party analytics and advertising services we use. Please see the links below to learn more about the data practices of our third-party service providers (including opt-out mechanisms they may offer):</strong><br/><br/>
+
+
+<ul class="otherlink">
+<li><strong>AdColony:</strong>
+<a href="https://www.adcolony.com/privacy-policy/" target="_blank">
+ https://www.adcolony.com/privacy-policy/</a>
+ </li>
+<li><strong>Google AdMob:</strong><a href="https://www.google.com/intl/en/policies/privacy/" target="_blank"> https://www.google.com/intl/en/policies/privacy/</a> </li>
+<li><strong>MoPub:</strong><a href="https://www.mopub.com/legal/privacy/" target="_blank"> https://www.mopub.com/legal/privacy/ </a></li>
+<li><strong>AppLovin:</strong><a href="https://www.applovin.com/privacy" target="_blank"> https://www.applovin.com/privacy </a></li>
+<li><strong>Conversant Media:</strong><a href="https://www.conversantmedia.com/legal/privacy" target="_blank"> https://www.conversantmedia.com/legal/privacy </a></li>
+<li><strong>Facebook Audience Network:</strong><a href="https://www.facebook.com/policy.php" target="_blank"> https://www.facebook.com/policy.php</a></li> 
+<li><strong>Yahoo! Flurry:</strong><a href="https://policies.yahoo.com/us/en/yahoo/privacy/products/developer/index.htm" target="_blank"> https://policies.yahoo.com/us/en/yahoo/privacy/products/developer/index.htm </a></li>
+<li><strong>InMobi:</strong><a href="https://www.inmobi.com/privacy-policy/ " target="_blank"> https://www.inmobi.com/privacy-policy/ </a></li>
+<li><strong>LifeStreet:</strong><a href="http://www.lifestreet.com/privacy/" target="_blank"> http://www.lifestreet.com/privacy/ </a></li>
+<li><strong>UnityAds:</strong><a href="https://unity3d.com/legal/privacy-policy" target="_blank"> https://unity3d.com/legal/privacy-policy </a></li>
+<li><strong>Vungle: </strong><a href="https://vungle.com/privacy/" target="_blank"> https://vungle.com/privacy/ </a></li>
+<li><strong>Aerserv:</strong><a href="https://www.aerserv.com/privacy-policy/" target="_blank"> https://www.aerserv.com/privacy-policy/ </a></li>
+<li><strong>Flurry:</strong><a href="https://dev.flurry.com/secure/optOut.do" target="_blank"> https://dev.flurry.com/secure/optOut.do </a></li>
+<li><strong>Nanigans:</strong><a href="http://www.nanigans.com/privacy-policy/" target="_blank"> http://www.nanigans.com/privacy-policy/ </a></li>
+<li><strong>TapJoy:</strong><a href="http://info.tapjoy.com/about-tapjoy/privacy-policy/" target="_blank"> http://info.tapjoy.com/about-tapjoy/privacy-policy/</a></li>
+</ul><br/> 
+</div>
