@@ -11,7 +11,7 @@
       <li class="nav-item"><a class="nav-link" href="{{route('LandingPageRoute')}}">{{__('layout.Home')}}</a></li>
       <li class="nav-item"><a class="nav-link" href="{{route('blog.index')}}">{{__('layout.News')}}</a></li>
       <li class="nav-item"><a class="nav-link" href="{{route('ContactRoute')}}">{{__('layout.Contact')}}</a></li>
-      <li class="nav-item"><a class="nav-link" href="{{route('LandingPageRoute')}}#team">{{__('layout.Team')}}</a></li>
+      {{-- <li class="nav-item"><a class="nav-link" href="{{route('LandingPageRoute')}}#team">{{__('layout.Team')}}</a></li> --}}
       <li class="nav-item">
           <span class="nav-link"><i class="fas fa-translate"></i><a class="text-white" href="{{route('changeLang' , 'ar')}}">عربي</a> / <a class="text-white" href="{{route('changeLang' , 'en')}}">EN</a></span>
       </li>

@@ -31,7 +31,7 @@ s0.parentNode.insertBefore(s1,s0);
               <ul>
                 <li><a href="{{route('LandingPageRoute')}}">{{__('layout.Home')}}</a></li>
                 <li><a href="{{route('blog.index')}}">{{__('layout.News')}}</a></li>
-                <li><a href="#team">{{__('layout.Team')}}</a></li>
+                {{-- <li><a href="#team">{{__('layout.Team')}}</a></li> --}}
                 <li><a href="{{route('ContactRoute')}}">{{__('layout.Contact')}}</a></li>
               </ul>
             </div>
