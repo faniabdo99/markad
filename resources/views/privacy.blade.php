@@ -1,5 +1,5 @@
 @include('layout.header' , ['PageTitle' => 'Markad Racing Privacy Policy'])
-<div>
+<div class="privacy-container">
 <strong>What’s Changed:</strong> Please note the changes in the definition of <strong>“Markad Racing ,”</strong> changes in “Sharing Your Information,” “Analytics, Advertising and Other Services Provided by Other Companies” and in “Your Choices” below.<br/><br/>
 
 This Privacy Policy explains how information about you is collected, used and disclosed by Markad Racing  and its subsidiaries (“Markad Racing  ,” “we” or “us”). This Privacy Policy applies to information we collect when you use our websites, mobile applications and other online products and services (collectively, the “Services”). This Privacy Policy does not apply to the information collected from: <br/>
