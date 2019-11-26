@@ -386,7 +386,7 @@
       </div>
     </div>
   </section>
-<div class="container">
+{{-- <div class="container">
   <section class="team" id="team">
   <div class="row">
       <div class="col">
@@ -478,7 +478,7 @@
       </div>
     </div>
   </section>
-</div>
+</div> --}}
 </body>
 @include('layout.footer')
 @include('layout.scripts')
