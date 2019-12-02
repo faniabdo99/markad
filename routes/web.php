@@ -8,6 +8,8 @@ Route::middleware('https')->group(function(){
     Route::any('/newsletter-add' , 'NewsLetterController@postNewsLetter')->name('newsletter.post');
     Route::get('/newsletter-out' , 'NewsLetterController@getOutNewsLetter')->name('newsletter.out.get');
     Route::post('/newsletter-out' , 'NewsLetterController@postOutNewsLetter')->name('newsletter.out.post');
+    Route::get('section/{slug}' , 'HijenController@getSingleSection')->name('section.single');
+    Route::get('/hijen/{slug}' , 'HijenController@getSinglePost')->name('hijen.single');
     Route::middleware(['auth'])->group(function () {
         Route::prefix('admin')->group(function () {
             Route::get('/' , 'AdminController@getIndex')->name('admin.home');
@@ -22,6 +24,14 @@ Route::middleware('https')->group(function(){
             Route::get('/messages' , 'AdminController@getMessages')->name('admin.allMessages');
             Route::get('/archive-messages/{id}' , 'AdminController@ArchiveMessage')->name('message.archive');
             Route::get('/delete-message/{id}' , 'AdminController@DeleteMessage')->name('message.delete');
+            Route::prefix('hijen')->group(function(){
+                Route::get('all' , 'HijenController@AdminAll')->name('admin.hijen.all');
+                Route::get('/new' , 'HijenController@GetNewPost')->name('admin.hijen.new');
+                Route::post('/new' , 'HijenController@PostNewPost')->name('admin.hijen.UploadPost');
+                Route::get('/sections' , 'HijenController@getAllSections')->name('admin.sections.all');
+                Route::view('/new-section' , 'admin.hijen.new-section')->name('admin.hijenSection.new');
+                Route::post('/new-section' , 'HijenController@PostNewSection')->name('admin.hijenSection.post');
+            });
         });
     });
     Route::get('/logout', 'AdminController@logout')->name('link.logout');

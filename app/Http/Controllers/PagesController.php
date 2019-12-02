@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use App\HijenSection;
 class PagesController extends Controller{
   public function ChangeLanguage($locale){
       if (in_array($locale, \Config::get('app.locales'))) {
@@ -13,9 +14,8 @@ class PagesController extends Controller{
  
   }
     public function getLandingPage(){
-      
       $ThreePosts = Post::orderBy('created_at' , 'desc')->limit(5)->get();
-      return view('LandingPage' , ['ThreePosts' => $ThreePosts]);
+      return view('LandingPage' , compact('ThreePosts'));
     }
 
     public function getContactPage(){
@@ -25,4 +25,5 @@ class PagesController extends Controller{
     public function getPrivacy(){
       return view('privacy');
     }
+    
 }

@@ -29,7 +29,35 @@
                             </div>
                         </div>
                     </div>
-
+                    <div class="admin-card">
+                        <h4>مركز الهجن</h4>
+                        <div class="row">
+                            <div class="col-md-4 col-xs-12 col-sm-12">
+                                <a href="{{route('admin.hijen.all')}}">
+                                    <div class="card-single bordered">
+                                        <i class="fas fa-edit"></i>
+                                        <p><span>{{$Hijen}}</span> جميع الموارد</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-12 col-sm-12">
+                                <a href="{{route('admin.sections.all')}}">
+                                    <div class="card-single bordered">
+                                        <i class="fas fa-edit"></i>
+                                        <p><span>{{$HijenSection}}</span> تعديل الأقسام</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-12 col-sm-12">
+                                <a href="{{route('admin.hijen.new')}}">
+                                    <div class="card-single">
+                                        <i class="fas fa-plus"></i>
+                                        <p>اضافة محتوى جديد</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="admin-card">
                         <h4>طلبات الدعم الفني و الرسائل</h4>
                         <div class="row">

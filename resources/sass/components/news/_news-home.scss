@@ -129,6 +129,16 @@
     }
 }
 .news-single-post-content{
+    a.download-post-pdf{
+        background:#cf3418;
+        padding:25px;
+        display: block;
+        width:25%;
+        text-align: center;
+        color:#fff;
+        border-radius: 4px;
+        margin: 10px auto 25px auto;
+    }
     p,div{
         color:$black;
         line-height: 1.3;

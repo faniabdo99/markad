@@ -12,7 +12,8 @@ use App\Mail\NewsLetterEmail;
 use App\Post;
 use App\Message;
 use App\NewsLetter;
-
+use App\Hijen;
+use App\HijenSection;
 
 class AdminController extends Controller{
     //Get the All Posts Page (Index)
@@ -21,7 +22,9 @@ class AdminController extends Controller{
         $AllMessages = Message::all();
         $Tickets = Message::where('is_support_ticket' , 1)->get();
         $Archived = Message::where('is_archived' , 1)->get();
-        return view('admin.index')->with(['PageTitle' => 'لوحة التحكم','PageDescription' => 'صفحة خاصة بلوحة تحكم المدير' , 'AllPosts' => $AllPosts , 'AllMessages' => $AllMessages , 'Tickets' => $Tickets , 'Archived' => $Archived ]);
+        $Hijen = Hijen::count();
+        $HijenSection = HijenSection::count();
+        return view('admin.index')->with(['Hijen' => $Hijen , 'HijenSection' => $HijenSection ,'PageTitle' => 'لوحة التحكم','PageDescription' => 'صفحة خاصة بلوحة تحكم المدير' , 'AllPosts' => $AllPosts , 'AllMessages' => $AllMessages , 'Tickets' => $Tickets , 'Archived' => $Archived ]);
     }
     //Get the new post page (the form)
     public function getNewPost(){

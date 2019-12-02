@@ -11,6 +11,19 @@
       <li class="nav-item"><a class="nav-link" href="{{route('LandingPageRoute')}}">{{__('layout.Home')}}</a></li>
       <li class="nav-item"><a class="nav-link" href="{{route('blog.index')}}">{{__('layout.News')}}</a></li>
       <li class="nav-item"><a class="nav-link" href="{{route('ContactRoute')}}">{{__('layout.Contact')}}</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          مركز الهجن
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <?php $Sections = App\HijenSection::latest()->get(); ?>
+          @forelse($Sections as $Section)
+          <a class="dropdown-item" href="{{route('section.single' , $Section->slug)}}">{{$Section->title}}</a>
+          @empty 
+          <a class="dropdown-item" href="#">لا يوجد محتوى بعد</a>
+          @endforelse
+        </div>
+      </li>
       {{-- <li class="nav-item"><a class="nav-link" href="{{route('LandingPageRoute')}}#team">{{__('layout.Team')}}</a></li> --}}
       <li class="nav-item">
           <span class="nav-link"><i class="fas fa-translate"></i><a class="text-white" href="{{route('changeLang' , 'ar')}}">عربي</a> / <a class="text-white" href="{{route('changeLang' , 'en')}}">EN</a></span>
