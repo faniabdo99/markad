@@ -24,5 +24,8 @@ return [
     'NewsletterLeaveSubmit' => 'الغاء الاشتراك',
     'NewsletterLeaveEmailRequired' => 'حقل البريد الإلكتروني مطلوب',
     'NewsletterLeaveDeleted' => 'تم ازالة بريدك الإلكتروني بنجاح',
-    'NewsletterLeaveNotFound' => 'لم نستطع ايجاد بريدك الإلكتروني ! حاول مجدداً'
+    'NewsletterLeaveNotFound' => 'لم نستطع ايجاد بريدك الإلكتروني ! حاول مجدداً',
+    //Error 404
+    'Error404H' => 'خطأ | 404',
+    'Error404P' => 'الصفحة التي تبحث عنها غير موجودة !'
 ];

@@ -88,6 +88,7 @@ return [
     'NewsLetterPlaceholder' => 'Enter your email here',
     'NewsLetterSuccess' => 'Your email has been added!',
     'NewsLetterFailur' => 'Something went wrong! Please try again.',
-    'NewsLetterExists'=> 'Your Email is Already Added !'
+    'NewsLetterExists'=> 'Your Email is Already Added !',
+    'NewsletterEmailInvalid' => 'Your Email is Invalid !'
 
 ];

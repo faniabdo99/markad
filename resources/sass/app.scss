@@ -46,6 +46,13 @@ a:hover{
   left: 0;
   display: block;
   margin-top: -90px;
+  &[alt="Camel From Right"]{
+    height: 250px;
+    position: absolute;
+    display: block;
+    margin-top: -200px;
+    z-index: -1;
+   }
 }
 @media screen and (max-width:746px){
   .landing-page-camels{
@@ -84,7 +91,9 @@ a:hover{
 @import "components/contact";
 /* NEWS SECTION - HOME */
 @import "components/news/news-home";
-/* NEWSLETTER - ALL*/
+/* NEWSLETTER - ALL */
 @import "components/news-letter";
-/* PRIVACY POLICY*/
+/* PRIVACY POLICY */
 @import "components/privacy";
+/* ERROR PAGES */
+@import "components/error-pages";

@@ -5,6 +5,9 @@ use Validator;
 use Illuminate\Http\Request;
 use App\Hijen;
 use App\HijenSection;
+use Mail;
+//Mails
+use App\Mail\NewsLetterEmail;
 class HijenController extends Controller{
     public function AdminAll(){
         $AllPosts = Hijen::latest()->get();
@@ -88,6 +91,15 @@ class HijenController extends Controller{
                 $UplodadeData['file'] = $FilePath;
             }
             $ThePost = Hijen::create($UplodadeData);
+            /*== Send The Email ==*/
+            //Get Users Emails as an array
+            $EmailData = $request->only(['title', 'slug' , 'description']);
+            $NewsLetterUsers = Newsletter::all();
+            $UsersEmails = [];
+            foreach($NewsLetterUsers as $UserEmail){
+                array_push($UsersEmails,$UserEmail->email); 
+            }
+            Mail::to($UsersEmails)->send(new NewsLetterEmail($EmailData));
             return back()->withSuccess('تم رفع المنشور بنجاح');
         }
     }

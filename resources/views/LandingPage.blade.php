@@ -209,6 +209,7 @@
         </div>
       </div>
       <div class="col-md-4 col-xs-12 col-sm-12">
+          <img src="{{asset('public/images')}}/camel-from-right.png" class="landing-page-camels" alt="Camel From Right" title="Camel From Right" >
         <div class="single-game-track {{__('LandingPage.textClass')}}">
           <img src="{{asset('public/images')}}/Al-Wathba.jpg" alt="Al Wathba Track" title="Al Wathba Track" >
           <div class="text-container">

@@ -24,5 +24,8 @@ return [
     'NewsletterLeaveSubmit' => 'Unsubscribe',
     'NewsletterLeaveEmailRequired' => 'Your email is required',
     'NewsletterLeaveDeleted' => 'Success , Your email has been removed',
-    'NewsletterLeaveNotFound' => 'We can\'t find your email ! check again'
+    'NewsletterLeaveNotFound' => 'We can\'t find your email ! check again',
+    //Error 404
+    'Error404H' => 'Error | 404',
+    'Error404P' => 'The Page You Looking For Cannot Be Found !'
 ];

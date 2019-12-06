@@ -89,6 +89,8 @@ return [
     'NewsLetterPlaceholder' => 'أدخل بريدك الإلكتروني هنا',
     'NewsLetterSuccess' => 'تم اضافتك الى القائمة البريدية بنجاح !',
     'NewsLetterFailur' => 'حدث خطأ أثناء التسجيل , يرجى المحاولة مجدداً',
-    'NewsLetterExists'=> 'انت مضاف بالفعل للقائمة البريدية !'
+    'NewsLetterExists'=> 'انت مضاف بالفعل للقائمة البريدية !',
+    'NewsletterEmailInvalid' => 'البريد الإلكتروني الذي أدخلته غير صحيح !',
+
 
 ];

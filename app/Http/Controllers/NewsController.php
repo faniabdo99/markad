@@ -15,7 +15,11 @@ class NewsController extends Controller{
 
     public function getSingle($slug){
         $PostDetailes = Post::where('p_slug' , $slug)->first();
-        return view('blog.single')->with(['PostDetailes' => $PostDetailes]);
+        if(isset($PostDetailes->exists)){
+            return view('blog.single')->with(['PostDetailes' => $PostDetailes]);
+        }else{
+            abort(404);
+        }
     }
 
 }

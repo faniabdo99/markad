@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Validator;
 use Illuminate\Http\Request;
 use App\NewsLetter;
 class NewsLetterController extends Controller{
@@ -13,12 +13,18 @@ class NewsLetterController extends Controller{
             return Response()->json($arr);
         }else{
             $data = $r->all();
-            $NewsLetter = new NewsLetter();
-            $NewsLetter->email = $r->email;
-            $check = $NewsLetter->save();
-            $arr = array('msg' => '<p class="error">'.__('LandingPage.NewsLetterFailur').'</p>');
-            if($check){ 
-            $arr = array('msg' => '<p class="success">'.__('LandingPage.NewsLetterSuccess').'</p>');
+            //Validate is an Email 
+            $Validator = Validator::make($data , ['email' => 'required|email']);
+            if($Validator->fails()){
+                $arr = array('msg' => '<p class="error">'.__('LandingPage.NewsletterEmailInvalid').'</p>');
+            }else{
+                $NewsLetter = new NewsLetter();
+                $NewsLetter->email = $r->email;
+                $check = $NewsLetter->save();
+                $arr = array('msg' => '<p class="error">'.__('LandingPage.NewsLetterFailur').'</p>');
+                if($check){ 
+                $arr = array('msg' => '<p class="success">'.__('LandingPage.NewsLetterSuccess').'</p>');
+                }
             }
             return Response()->json($arr);
         }
