@@ -360,10 +360,11 @@
         <p class="{{__('LandingPage.textClass')}}">{{__('LandingPage.DownloadsP')}}</p>
       </div>
       <div class="col-md-6 col-xs-12 col-sm-12">
-        <h3 class="text-center">{{__('LandingPage.ComingSoon')}}</h3>
-        <a href="{{route('ContactRoute')}}" class="coming-soon-contact">{{__('LandingPage.ContactUs')}}</a>
-       {{-- <a href="#" class="download-btn"><i class="fab fa-google-play"></i> {{__('LandingPage.DownloadFromGooglePlay')}}</a>
-        <a href="#" class="download-btn"><i class="fab fa-apple"></i> {{__('LandingPage.DownloadFromAppStore')}}</a>--}}
+        {{-- <h3 class="text-center">{{__('LandingPage.ComingSoon')}}</h3> --}}
+        {{-- <a href="{{route('ContactRoute')}}" class="coming-soon-contact">{{__('LandingPage.ContactUs')}}</a> --}}
+        <br>
+       <a href="https://play.google.com/store/apps/details?id=com.markadracing.camel" target="_blank" class="download-btn"><i class="fab fa-google-play"></i> {{__('LandingPage.DownloadFromGooglePlay')}}</a>
+       {{-- <a href="#" class="download-btn"><i class="fab fa-apple"></i> {{__('LandingPage.DownloadFromAppStore')}}</a>--}}
       </div>
     </div>
   </section>
