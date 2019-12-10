@@ -9,8 +9,8 @@
               <h1 class="{{__('LandingPage.textClass')}}">{{ __('LandingPage.PageHeader') }}</h1>
               <p  class="{{__('LandingPage.textClass')}}">{{ __('LandingPage.PageDescription')}}</p>
               <ul class="hero-buttons">
-                <li><a class="get-started" href="#feauters">{{ __('LandingPage.LearnMore')}}</a></li>
-                <li><a class="watch-trailer" href="https://www.youtube.com/channel/UChXbWoZqt5S-FH3mM4QeQcQ" target="_blank"><i class="fab fa-youtube"></i>  {{ __('LandingPage.WatchTrailer')}}</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=com.markadracing.camel" target="_blank"><img class="g-play" src="{{asset('public/images')}}/google-play.png" ></a></li>
+                <li><a href="https://apps.apple.com/us/app/%D8%B3%D8%A8%D8%A7%D9%82-%D8%A7%D9%84%D9%87%D8%AC%D9%86-2020/id1489191603?ls=1" target="_blank"><img class="a-store" src="{{asset('public/images')}}/app-store.svg" ></a></li>
               </ul>
             </div>
             <div class="col-md-5 col-xs-12 col-sm-12">
@@ -360,11 +360,9 @@
         <p class="{{__('LandingPage.textClass')}}">{{__('LandingPage.DownloadsP')}}</p>
       </div>
       <div class="col-md-6 col-xs-12 col-sm-12">
-        {{-- <h3 class="text-center">{{__('LandingPage.ComingSoon')}}</h3> --}}
-        {{-- <a href="{{route('ContactRoute')}}" class="coming-soon-contact">{{__('LandingPage.ContactUs')}}</a> --}}
         <br>
-       <a href="https://play.google.com/store/apps/details?id=com.markadracing.camel" target="_blank" class="download-btn"><i class="fab fa-google-play"></i> {{__('LandingPage.DownloadFromGooglePlay')}}</a>
-       {{-- <a href="#" class="download-btn"><i class="fab fa-apple"></i> {{__('LandingPage.DownloadFromAppStore')}}</a>--}}
+       <a href="https://play.google.com/store/apps/details?id=com.markadracing.camel" target="_blank" class="download-btn"><img class="g-play" src="{{asset('public/images')}}/google-play.png" alt="Donwload From Google Play"></a>
+       <a href="https://apps.apple.com/us/app/%D8%B3%D8%A8%D8%A7%D9%82-%D8%A7%D9%84%D9%87%D8%AC%D9%86-2020/id1489191603?ls=1" target="_blank" class="download-btn"><img src="{{asset('public/images')}}/app-store.svg" alt="Donwload From Google Play"></a>
       </div>
     </div>
   </section>

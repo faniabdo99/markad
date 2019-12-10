@@ -33,22 +33,15 @@
           border-radius: 50px;
           padding: 10px 50px 14px 50px;
           transition: all ease 0.3s;
-          &.get-started{
-            background: $brand;
-            color: $black;
-            &:hover{
-              background: $brand-hover;
-              transition: all ease 0.3s;
+          img{
+            width:200px;
+            height:auto;
+            margin-right:auto;
+            display: block;
+            &.g-play{
+              width:250px;
             }
-        }
-        &.watch-trailer{
-          background: $youtube;
-          color: #fff;
-          &:hover{
-            background: $youtube-hover;
-            transition: all ease 0.3s;
           }
-        }
        }
       }
     }

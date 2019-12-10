@@ -17,11 +17,14 @@
   }
   a.download-btn{
     display: block;
-    padding:15px;
-    border-radius: 4px;
     margin-bottom: 25px;
     text-align: center;
     color:#fff;
-    background:$black;
+    img{
+      width:200px;
+      &.g-play{
+        width:230px;
+      }
+    }
   }
 }
