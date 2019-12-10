@@ -97,12 +97,19 @@
         font-size: 1em;
       }
       ul{
-        justify-content: space-between;
+        justify-content: space-around;
+        
         li{
           margin:5px;
           text-align: center;
           a{
-            padding: 5px 5px 8px 5px;
+            padding: 0;
+            img{
+              width:140px;
+              &.g-play{
+                width:160px;
+              }
+            }
          }
         }
       }
