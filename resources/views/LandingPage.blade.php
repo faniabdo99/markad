@@ -66,7 +66,7 @@
               <p>{{ __('LandingPage.TradStyRacingP')}}</p>
             </div>
           </div>
-  
+
           <div class="single-feature">
             <div class="feauter-img">
               <img src="{{asset('/public/images')}}/tree.png" alt="{{ __('LandingPage.RealLiveEH')}}" title="{{ __('LandingPage.RealLiveEH')}}" >
@@ -76,7 +76,7 @@
               <p>{{ __('LandingPage.RealLiveEP')}}</p>
             </div>
           </div>
-  
+
           <div class="single-feature">
             <div class="feauter-img">
               <img src="{{asset('/public/images')}}/upgrades.png" alt="{{ __('LandingPage.AccAndUpgradesH')}}" title="{{ __('LandingPage.AccAndUpgradesH')}}" >
@@ -86,7 +86,7 @@
               <p>{{ __('LandingPage.AccAndUpgradesP')}}</p>
             </div>
           </div>
-  
+
           <div class="single-feature">
             <div class="feauter-img">
               <img src="{{asset('/public/images')}}/engage.png" alt="{{ __('LandingPage.EngaingGameplayH')}}" title="{{ __('LandingPage.EngaingGameplayH')}}" >
@@ -96,11 +96,8 @@
               <p>{{ __('LandingPage.EngaingGameplayP')}}</p>
             </div>
           </div>
-  
-  
         </div>
-
-      @else 
+      @else
 
       <div class="col-md-7 col-xs-12 col-sm-12">
         <div class="single-feature">
@@ -241,35 +238,35 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{asset('public/images/media-slider')}}/CamelRenderA.jpg" alt="Camel Charachter" title="Camel Charachter">
-            
+
             </div>
             <div class="carousel-item">
               <img src="{{asset('public/images/media-slider')}}/CamelRenderB.jpg" alt="Camel Charachter B" title="Camel Charachter B">
-            
+
             </div>
             <div class="carousel-item">
               <img src="{{asset('public/images/media-slider')}}/CamelRenderC.jpeg" alt="" title="">
-            
+
             </div>
             <div class="carousel-item">
               <img src="{{asset('public/images/media-slider')}}/D1.jpg" alt="" title="">
-            
+
             </div>
             <div class="carousel-item">
               <img src="{{asset('public/images/media-slider')}}/E1.jpg" alt="" title="">
-            
+
             </div>
             <div class="carousel-item">
               <img src="{{asset('public/images/media-slider')}}/F1.jpg" alt="" title="">
-            
+
             </div>
             <div class="carousel-item">
               <img src="{{asset('public/images/media-slider')}}/G1.jpg" alt="" title="">
-            
+
             </div>
             <div class="carousel-item">
               <img src="{{asset('public/images/media-slider')}}/H1.jpg" alt="" title="">
-            
+
             </div>
 
           </div>
@@ -325,7 +322,6 @@
       </div>
     </div>
     <div class="row" dir="{{__('LandingPage.dir')}}">
-  
       <div class="col-md-4 col-xs-12 col-sm-12">
         <div class="home-single-news">
           <img src="storage/app/images/blog/1573655212.jfif" alt="اهتمام زايد بالهجن تعبير صادق عن الوفاء للماضي" title="اهتمام زايد بالهجن تعبير صادق عن الوفاء للماضي">
@@ -347,7 +343,7 @@
           <a class="read-more" href="{{route('blog.single' , $Post->p_slug )}}">{{__('LandingPage.ReadMore')}}</a>
         </div>
       </div>
-      @empty 
+      @empty
       <p>Our News Will Be Posted Soon !</p>
       @endforelse
     </div>

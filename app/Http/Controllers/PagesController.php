@@ -11,10 +11,10 @@ class PagesController extends Controller{
         session(['locale' => $locale]);
       }
       return redirect()->back();
- 
+
   }
     public function getLandingPage(){
-      $ThreePosts = Post::orderBy('created_at' , 'desc')->limit(5)->get();
+      $ThreePosts = Post::orderBy('created_at' , 'desc')->where('id' , '!=' , 1)->limit(5)->get();
       return view('LandingPage' , compact('ThreePosts'));
     }
 
@@ -25,5 +25,5 @@ class PagesController extends Controller{
     public function getPrivacy(){
       return view('privacy');
     }
-    
+
 }
