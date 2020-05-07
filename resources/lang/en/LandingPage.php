@@ -57,6 +57,8 @@ return [
     'DownloadFromAppStore' => 'Download From App Store',
     'ComingSoon' => 'Coming Soon ...',
     'ContactUs' => 'Contact Us',
+    //Charachters
+    'HijenCharachters' => 'Hijen Charachters',
     //Team
     'TeamHeading' => 'Our Team',
     'OwnerDescription' => 'Camels Racing is a substantial sport played in UAE and Gulf Countries , We like to share our culture with the world in most funny way !',

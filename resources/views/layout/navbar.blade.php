@@ -19,7 +19,7 @@
           <?php $Sections = App\HijenSection::latest()->get(); ?>
           @forelse($Sections as $Section)
           <a class="dropdown-item" href="{{route('section.single' , $Section->slug)}}">{{$Section->title}}</a>
-          @empty 
+          @empty
           <a class="dropdown-item" href="#">لا يوجد محتوى بعد</a>
           @endforelse
         </div>

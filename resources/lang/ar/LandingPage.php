@@ -58,6 +58,8 @@ return [
     'DownloadFromAppStore' => 'تنزيل من متجر أبل',
     'ComingSoon' => 'متاح للتنزيل قريباً',
     'ContactUs' => 'اتصل بنا',
+    //Charachters
+    'HijenCharachters' => 'شخصيات الهجن',
     //Team
     'TeamHeading' => 'فريق العمل',
     'OwnerDescription' => 'سباقات الهجن تعتبر من الرياضات الأساسية في الامارات العربية المتحدة و دول الخليج العربي , أحببت أن أشارك ثقافتي مع العالم بأكثر الطرق متعة !',
