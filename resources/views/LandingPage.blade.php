@@ -286,16 +286,16 @@
                     <img class="w-100" height="300" src="{{url('public/images/characters/')}}/uae.jfif" alt="Egypt Camel">
                 </div>
                 <div class="col-md-6">
-                    <img class="w-100" height="300" src="{{url('public/images/characters/')}}/egypt.jfif" alt="Egypt Camel">
+                    <img class="w-100" height="300" src="{{url('public/images/characters/')}}/saudi.jfif" alt="Saudi Camel">
                 </div>
               </div>
               <br>
               <div class="row mb-5">
                 <div class="col-md-6">
-                    <img class="w-100" height="300" src="{{url('public/images/characters/')}}/markad.jfif" alt="Egypt Camel">
+                    <img class="w-100" height="300" src="{{url('public/images/characters/')}}/markad.jfif" alt="Markad Racing Camel">
                 </div>
                 <div class="col-md-6">
-                    <img class="w-100" height="300" src="{{url('public/images/characters/')}}/markad-2.jfif" alt="Egypt Camel">
+                    <img class="w-100" height="300" src="{{url('public/images/characters/')}}/markad-2.jfif" alt="Markad Racing 2 Camel">
                 </div>
             </div>
         </div>
