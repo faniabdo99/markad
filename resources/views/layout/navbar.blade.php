@@ -11,6 +11,7 @@
       <li class="nav-item"><a class="nav-link" href="{{route('LandingPageRoute')}}">{{__('layout.Home')}}</a></li>
       <li class="nav-item"><a class="nav-link" href="{{route('blog.index')}}">{{__('layout.News')}}</a></li>
       <li class="nav-item"><a class="nav-link" href="{{route('ContactRoute')}}">{{__('layout.Contact')}}</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{route('Contest')}}">{{__('layout.Contest')}}</a></li>
       {{-- <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           مركز الهجن

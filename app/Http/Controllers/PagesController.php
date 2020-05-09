@@ -17,7 +17,9 @@ class PagesController extends Controller{
       $ThreePosts = Post::orderBy('created_at' , 'desc')->where('id' , '!=' , 1)->limit(5)->get();
       return view('LandingPage' , compact('ThreePosts'));
     }
-
+    public function getContest(){
+      return view('contest');
+    }
     public function getContactPage(){
       return view('contact');
     }

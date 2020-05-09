@@ -1,5 +1,10 @@
 .hero{
-  height: 100vh;
+  &.three-quarter-width{
+    height: 75vh;
+    .hero-content{
+      height: 75vh;
+    }
+  }
   width: 100%;
   background: url('../images/hero.jpg') no-repeat center center;
   background-size: cover;
@@ -49,8 +54,8 @@
       position: relative;
       background: url('../images/mobile-frame.png') no-repeat top left transparent;
       background-size:cover;
-      width: 496px; 
-      height: 294px; 
+      width: 496px;
+      height: 294px;
       position: relative;
       video{
         width: 82%;
@@ -98,7 +103,7 @@
       }
       ul{
         justify-content: space-around;
-        
+
         li{
           margin:5px;
           text-align: center;

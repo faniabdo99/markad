@@ -1,6 +1,14 @@
 //Variables
 @import "vars";
 /* GLOBAL CSS */
+.bg-brand{
+    background-color: $brand;
+    transition: all ease .3s;
+    &:hover{
+      background-color: $brand-hover;
+      transition: all ease .3s;
+    }
+}
 *{
   box-sizing: border-box;margin: 0;padding: 0;
 }
@@ -97,5 +105,7 @@ a:hover{
 @import "components/news-letter";
 /* PRIVACY POLICY */
 @import "components/privacy";
+/* PRIVACY POLICY */
+@import "components/contest-content";
 /* ERROR PAGES */
 @import "components/error-pages";

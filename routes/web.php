@@ -1,8 +1,9 @@
 <?php
-Route::get('setlocale/{locale}', "PagesController@ChangeLanguage")->name('changeLang');
 Route::middleware('https')->group(function(){
-    Route::get('privacy' , 'PagesController@getPrivacy')->name('PrivacyRoute');
+    Route::get('setlocale/{locale}', "PagesController@ChangeLanguage")->name('changeLang');
     Route::get('/', 'PagesController@getLandingPage')->name('LandingPageRoute');
+    Route::get('/privacy' , 'PagesController@getPrivacy')->name('PrivacyRoute');
+    Route::get('/contest' , 'PagesController@getContest')->name('Contest');
     Route::get('/contact', 'PagesController@getContactPage')->name('ContactRoute');
     Route::post('/contact', 'ContactController@ProccessContact')->name('ContactRouteProccess');
     Route::any('/newsletter-add' , 'NewsLetterController@postNewsLetter')->name('newsletter.post');

@@ -11,5 +11,6 @@
         'Contact' => 'Contact',
         'Team' => 'Team' ,
         'Downloads' => 'Downloads',
-        
+        'Contest' => 'Contest'
+
     ];
