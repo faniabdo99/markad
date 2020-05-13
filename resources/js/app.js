@@ -83,14 +83,10 @@ $(document).ready(function() {
         var Top5Local = data.local.slice(0,5);
         var Top5Global = data.global.slice(0,5);
         Top5Local.map(i => {
-          var UpPoints = i.stats.racesWon + i.stats.tournamentsWon;
-          var DownPoints = i.stats.racesLost + (i.stats.tournamentsTotal - i.stats.tournamentsWon);
-          LocalList.append('<li class="single-resulte-item"><p class="player-name">'+i.name+'</p><p class="points">'+UpPoints+'/'+DownPoints+'</p></li>');
+          LocalList.append('<li class="single-resulte-item"><p class="player-name">'+i.name+'</p><p class="points">'+i.stats.racesWon+'/'+i.stats.racesLost+'</p></li>');
         });
         Top5Global.map(i => {
-          var UpPoints = i.stats.racesWon + i.stats.tournamentsWon;
-          var DownPoints = i.stats.racesLost + (i.stats.tournamentsTotal - i.stats.tournamentsWon);
-          GlobalList.append('<li class="single-resulte-item"><p class="player-name">'+i.name+'</p><p class="points">'+UpPoints+'/'+DownPoints+'</p></li>');
+          GlobalList.append('<li class="single-resulte-item"><p class="player-name">'+i.name+'</p><p class="points">'+i.stats.racesWon+'/'+i.stats.racesLost+'</p></li>');
         });
       },
       error: function(data){
