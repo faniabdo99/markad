@@ -82,11 +82,19 @@ $(document).ready(function() {
         var GlobalList = $("#global-leaderboard");
         var Top5Local = data.local.slice(0,5);
         var Top5Global = data.global.slice(0,5);
-        Top5Local.map(i => {
-          LocalList.append('<li class="single-resulte-item"><p class="player-name">'+i.name+'</p><p class="points">'+i.stats.racesWon+'/'+i.stats.racesLost+'</p></li>');
+        Top5Local.map((i , index) => {
+          var PrizeIcon ="<p class='icon'><b>"+ (index + 1) +"</b></p>";
+          if(index == 0){PrizeIcon = '<p class="icon"><img src="public/images/contest/sword-icon.png" /></p>';}
+          if(index == 1){PrizeIcon = '<p class="icon"><img src="public/images/contest/gun-icon.png" /></p>';}
+          if(index == 2){PrizeIcon = '<p class="icon"><img src="public/images/contest/trophy-icon.png" /></p>';}
+          LocalList.append('<li class="single-resulte-item">'+ PrizeIcon +'<p class="player-name">'+i.name+'</p><p class="points">'+i.stats.racesWon+'/'+i.stats.racesLost+' <b class="mr-3 player-country">'+i.country+'</b> </p></li>');
         });
-        Top5Global.map(i => {
-          GlobalList.append('<li class="single-resulte-item"><p class="player-name">'+i.name+'</p><p class="points">'+i.stats.racesWon+'/'+i.stats.racesLost+'</p></li>');
+        Top5Global.map((i,index) => {
+          var PrizeIcon ="<p class='icon'><b>"+ (index + 1) +"</b></p>";
+          if(index == 0){PrizeIcon = '<p class="icon"><img src="public/images/contest/sword-icon.png" /></p>';}
+          if(index == 1){PrizeIcon = '<p class="icon"><img src="public/images/contest/gun-icon.png" /></p>';}
+          if(index == 2){PrizeIcon = '<p class="icon"><img src="public/images/contest/trophy-icon.png" /></p>';}
+          GlobalList.append('<li class="single-resulte-item">'+ PrizeIcon +'<p class="player-name">'+i.name+'</p><p class="points">'+i.stats.racesWon+'/'+i.stats.racesLost+' <b class="mr-3 player-country">'+i.country+'</b> </p></li>');
         });
       },
       error: function(data){
