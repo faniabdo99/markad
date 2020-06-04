@@ -16,7 +16,7 @@
         "laravel/tinker": "^1.0",
         "nao-pon/flysystem-google-drive": "~1.1",
         "nesbot/carbon": "^2.25",
-        "spatie/laravel-backup": "^6.9"
+        "spatie/laravel-backup": "^6.10"
     },
     "require-dev": {
         "facade/ignition": "^1.4",

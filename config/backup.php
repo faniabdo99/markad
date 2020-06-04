@@ -14,7 +14,6 @@ return [
                  * The list of directories and files that will be included in the backup.
                  */
                 'include' => [
-                    base_path(),
                 ],
                 /*
                  * These directories and files will be excluded from the backup.
@@ -130,7 +129,7 @@ return [
 
             'from' => [
                 'address' => env('MAIL_FROM_ADDRESS', 'auto@markadracing.com'),
-                'name' => env('MAIL_FROM_NAME', 'Markad Racing Auto Backup Bot'),
+                'name' => env('MAIL_FROM_NAME', 'Markad Racing Auto Backup'),
             ],
         ],
 
